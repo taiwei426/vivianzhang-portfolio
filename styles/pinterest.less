@@ -1,0 +1,433 @@
+@import "variables.less"; 
+@font-face{
+	font-family: archerbold;
+	src: url(../fonts/archer/ArcherPro-Bold.otf);
+} // @font-face
+.archerbold{
+	font-family: archerbold;
+}
+
+@font-face{
+	font-family: archerbook;
+	src: url(../fonts/archer/ArcherPro-Book.otf);
+} // @font-face
+.archerbook{
+	font-family: archerbook;
+}
+
+@font-face{
+	font-family: archermedium;
+	src: url(../fonts/archer/ArcherPro-Medium.otf);
+} // @font-face
+.archermedium{
+	font-family: archermedium;
+}
+@font-face{
+	font-family: archerthin;
+	src: url(../fonts/archer/ArcherPro-Thin.otf);
+} // @font-face
+.archerthin{
+	font-family: archerthin;
+}
+@font-face{
+	font-family: archerlight;
+	src: url(../fonts/archer/ArcherPro-Light.otf);
+} // @font-face
+.archerlight{
+	font-family: archerlight;
+}
+
+@font-face{
+	font-family: cgli;
+	src: url(../fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf);
+} // @font-face
+.cgli{
+	font-family: cgli;
+}
+
+
+
+
+
+@pink: #f18888;
+@slate: #292a2b;
+
+
+body{
+	background-color: #f8f8f8;
+	overflow-x: hidden;
+}
+
+
+#pinterest_wrapper{
+	
+	section{
+		position: relative;
+		width: 100%;
+		display: flex;
+		-webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    -webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	}
+	h1{
+		font-size: 100px;
+		.lust;
+		color: @pink;
+		text-align: center;
+		line-height: 90px;
+		padding-bottom: 50px;
+	}
+	h2{
+		color: @pink;
+		.lust;
+		font-size: 40px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	h3{
+		color: @slate;
+		font-size: 17px;
+		.archermedium;
+		/*text-transform: uppercase;*/
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	
+	p, ul, li{
+		.archerlight;
+		color: @slate; 
+		font-size: 18px;
+		line-height: 1.5;
+		padding-bottom: 20px;
+	}
+	
+	ul{
+		list-style: none;
+	}
+	.number{
+		color: @slate2;
+		font-size: 50px;
+		.lust;
+		padding-top: 50px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	.caption{
+		.archermedium;
+		color: @slate;
+		font-size: 14px;
+		line-height: inherit;
+	}
+	b{
+		.archermedium;
+	}
+	a{
+		color: @pink;
+		.archermedium;
+		.fasttransition;
+		&:hover{
+			color: @pink - #222222;
+		}//&:hover
+	}//a
+	.text_wrapper{
+		width: 44vw;
+		max-width: 700px;
+		margin: 0 auto;
+		padding: 50px 0;
+		/*text-align: center;*/
+		min-height: calc(~'100vh - 100px');
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+		.text_holder{
+			display: block;
+		}
+	}
+	.img{
+
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+		margin-bottom: 20px;
+		/*.boxshadow(0 0 35px 0 rgba(61,53,96, 0.12));*/
+		overflow: hidden;
+		.borderradius(8px);
+		@width: 700px;
+		margin: 0 auto 20px auto;
+		&.outfit{
+			@width: 350px;
+			width: @width;
+			height: calc(~'(@{width}) * 1.25');
+			background-image: url('../pinterest-images/ideas/1_outfit.png');
+		}
+		&.search_2{
+			width: @width;
+			height: calc(~'(@{width}) * 1.213');
+			background-image: url('../pinterest-images/ideas/2_search.png');	
+		}
+		&.search_3{
+			width: @width;
+			height: calc(~'(@{width}) * .898');
+			background-image: url('../pinterest-images/ideas/3_search.png');	
+		}
+		&.product_lightbox{
+			@width: 350px;
+			width: @width;
+			height: calc(~'(@{width}) * 1.58');
+			background-image: url('../pinterest-images/ideas/4_product_lightbox.png');	
+		}
+		&.to_buy_board{
+			width: @width;
+			height: calc(~'(@{width}) * .705');
+			background-image: url('../pinterest-images/ideas/5_to_buy_board.png');	
+		}
+		&.solution_2{
+			width: @width;
+			height: calc(~'(@{width}) * .616');
+			background-image: url('../pinterest-images/ideas/6_solution_2.png');	
+		}
+		&.buyable_visual_results{
+			height: 700px;
+			background-image: url('../pinterest-images/ideas/buyable-visual-results.png');
+		}//&.buyable_visual_results
+		&.vivian{
+			height: 150px;
+			width: 150px;
+			margin: 30px auto 50px;
+			.borderradius(50%);
+			background-image: url('../pinterest-images/ideas/vivian_zhang.png');
+		}//&.vivian
+		&.churchill{
+			@width: 350px;
+			width: @width;
+			height: calc(~'(@{width}) * 1.778');
+			background-image: url('../pinterest-images/ideas/churchill_pin.png');
+		}
+	}
+	.image{
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.iphone{
+		top: 0;
+		left: -1vw;
+		width: 20vw;
+		height: calc(~'20vw * .911');
+		background-image: url('../pinterest-images/iphone.png');
+	}
+	.sunglasses{
+		top: 26vh;
+		left: 6vw;
+		width: 20vw;
+		height: calc(~'20vw * 1.4');
+		background-image: url('../pinterest-images/sunglasses.png');
+	}
+	.succulent{
+		top: 70vh;
+		left: -3vw;
+		width: 23vw;
+		height: calc(~'23vw * 1.08');
+		background-image: url('../pinterest-images/succulent.png');
+	}	
+	.cactus{
+		top: 0;
+		right: 0;
+		width: 23vw;
+		height: calc(~'23vw * .9');
+		background-image: url('../pinterest-images/cactus.png');
+	}
+	.lipstick1{
+		top: 42vh;
+		right: 15vw;
+		width: 8vw;
+		height: calc(~'8vw * 1.206');
+		background-image: url('../pinterest-images/lipstick1.png');
+	}
+	.lipstick2{
+		top: 50vh;
+		right: 11vw;
+		width: 8vw;
+		height: calc(~'8vw * 1.23');
+		background-image: url('../pinterest-images/lipstick2.png');
+	}
+	.zebra_clips{
+		top: 80vh;
+		right: 5vw;
+		width: 20vw;
+		height: calc(~'20vw * 1.03');
+		background-image: url('../pinterest-images/zebra_clips.png');
+	}
+	.makeup5{
+		top: 50vh;
+		right: -8vw;
+		width: 20vw;
+		height: calc(~'20vw * 1.013');
+		background-image: url('../pinterest-images/makeup5.png');
+	}
+	.makeup1{
+		top: 15vh;
+		left: 10vw;
+		width: 8vw;
+		height: calc(~'8vw * .97');
+		background-image: url('../pinterest-images/makeup1.png');
+	}
+	.paperclips{
+		top: 30vh;
+		left: 8vw;
+		width: 17vw;
+		height: 17vw;
+		background-image: url('../pinterest-images/paperclips.png');
+	}
+	.confetti{
+		top: 50vh;
+		right: -9vw;
+		width: 30vw;
+		height: calc(~'30vw * .822');
+		background-image: url('../pinterest-images/confetti.png');
+	}
+	
+	.marble{
+		top: 180vh;
+		right: -15vw;
+		width: 30vw;
+		height: calc(~'30vw * 1.86');
+		background-image: url('../pinterest-images/marble.png');
+	}
+	.lipstick3{
+		top: 100vh;
+		left: 8vw;
+		width: 7vw;
+		height: calc(~'7vw * 1.82');
+		background-image: url('../pinterest-images/lipstick3.png');
+	}
+	.lipgloss{
+		top: 290vh;
+		left: 8vw;
+		width: 8vw;
+		height: calc(~'8vw * 1.94');
+		background-image: url('../pinterest-images/lipgloss.png');
+	}
+	.flower{
+		top: 190vh;
+		right: 3vw;
+		width: 17vw;
+		height: calc(~'17vw * 1.15');
+		background-image: url('../pinterest-images/flower.png');
+	}
+	.dw_watch{
+		top: 225vh;
+		right: 8vw;
+		width: 8vw;
+		height: calc(~'8vw * 3.44');
+		background-image: url('../pinterest-images/dw-watch.png');
+	}
+	.camera{
+		top: 120vh;
+		left: -4vw;
+		width: 20vw;
+		height: calc(~'20vw * 1.54');
+		background-image: url('../pinterest-images/camera.png');
+	}
+	.panini{
+		top: 100vh;
+		left: -15vw;
+		width: 25vw;
+		height: calc(~'25vw * 1.09');
+		background-image: url('../pinterest-images/panini.png');
+	}
+	.makeup4{
+		top: -50vh;
+		left: 0vw;
+		width: 13vw;
+		height: calc(~'13vw * .928');
+		background-image: url('../pinterest-images/makeup4.png');
+	}
+	.grapefruit{
+		top: 0vh;
+		left: -5vw;
+		width: 30vw;
+		height: calc(~'30vw * .822');
+		background-image: url('../pinterest-images/grapefruit.png');
+	}
+	.blueberries{
+		bottom: 0vh;
+		left: 12vw;
+		width: 15vw;
+		height: 15vw;
+		background-image: url('../pinterest-images/blueberries.png');
+	}
+	.blueberry1{
+		bottom: 10vh;
+		left: 10vw;
+		width: 2vw;
+		height: 2vw;
+		background-image: url('../pinterest-images/blueberry1.png');
+	}
+	.blueberry2{
+		bottom: 15vh;
+		left: 8vw;
+		width: 2vw;
+		height: 2vw;
+		background-image: url('../pinterest-images/blueberry2.png');
+	}
+	.blueberry3{
+		bottom: 25vh;
+		left: 15vw;
+		width: 2vw;
+		height: 2vw;
+		background-image: url('../pinterest-images/blueberry3.png');
+	}
+	.blueberry4{
+		bottom: 30vh;
+		left: 20vw;
+		width: 2vw;
+		height: 2vw;
+		background-image: url('../pinterest-images/blueberry4.png');
+	}
+	.blueberry5{
+		bottom: 38vh;
+		left: 23vw;
+		width: 2vw;
+		height: 2vw;
+		background-image: url('../pinterest-images/blueberry5.png');
+	}
+	.blueberry6{
+		bottom: 40vh;
+		left: 22vw;
+		width: 2vw;
+		height: 2vw;
+		background-image: url('../pinterest-images/blueberry6.png');
+	}
+	.makeup2{
+		top: -20vh;
+		right:14vw;
+		width: 13vw;
+		height: calc(~'13vw * 1.086');
+		background-image: url('../pinterest-images/makeup2.png');
+	}
+	.tray{
+		top: 10vh;
+		right: -5vw;
+		width: 40vw;
+		height: calc(~'40vw * .85');
+		background-image: url('../pinterest-images/tray.png');
+	}
+	.makeup3{
+		top: 80vh;
+		right: 17vw;
+		width: 10vw;
+		height: calc(~'10vw * .85');
+		background-image: url('../pinterest-images/makeup3.png');
+	}
+}//#pinterest_wrapper

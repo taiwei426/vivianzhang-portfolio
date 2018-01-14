@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Interactive Social Emails | Vivian Zhang's Portfolio</title>
+		<meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../styles/master.css">
+		<script type='text/javascript' src='../js/jquery-2.2.4.min.js'></script>
+		<script type='text/javascript'>
+			$(function() {
+				$("#vz_loader").delay(1000).fadeOut("fast");
+				$(".pageload-overlay").delay(1000).fadeOut("slow");
+				$(".project_content").delay(1000).removeClass("no_scroll");
+			});
+		</script>
+		<script src="https://use.typekit.net/fal1kno.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script type='text/javascript' src='../js/js.js'></script>
+		<script type='text/javascript' src='../js/navigation.js'></script>
+	</head>
+	<body>
+		<div id="loader" class="pageload-overlay">
+			 <svg id="vz_loader" viewBox="0 0 114.3 64.3">
+			  	<clipPath id="cp-text">
+			    	<path d="M114.1,35.6c-2.7,16.3-11.5,28.1-29.8,28.1h-6.8L112.3,0H76.7H61.6H50.3l0.1,0.6c14.7,0,9.9,12.8,5.9,21.7l-9.8,21.7L33.2,14.7c-3.4-7.4-4.2-14.2,4-14.2l0-0.5H0v0.5c6.3,0,9.8,4.7,14.7,15L37.9,64l18.8-41.4
+				c1.1-2.3,3.3-7.2,3.3-7.2s5-14.6,22.5-14.7h8.5L56.3,64.3h53.5l4.4-28.8H114.1z"/>
+			  	</clipPath>
+			  	<g clip-path="url(#cp-text)">
+			    	<rect  class="anim-shape" width="100%" height="100%" ></rect>
+			  	</g>
+			</svg>
+		</div>
+		<div id="mobile_nav"></div>
+		<div id="ugc_in_email" class="body_wrapper project_wrapper project_content no_scroll">
+			<nav id="left_panel" class="left_panel">
+				<a href="../index.html" class="logo"></a>
+				<div class="navigation_wrapper">
+					<ul class="pagination_wrapper">
+						<li id="all_projects"><a href="../index.html#recent_projects" >All Projects</a></li>
+						<li id="previous_project"><a href="../project/influencer-relationship-manager.html" >Previous</a></li>
+						<li id="next_project"><a href="../project/filters-search.html">Next</a></li>
+					</ul>
+					<ul class="page_navigation">
+						<li id="smart_search_context" class="section nav_drawer">
+							<a class="section_title project_title">Interactive Social Emails</a>
+							<ul class="sub_sections">
+								<li class="mobile_close">Goal</li>
+								<li class="mobile_close">Team</li>
+								<li class="mobile_close">Timeline</li>
+							</ul>
+						</li>
+						<li id="ugc_in_email_goal" class="section nav_drawer">
+							<a class="section_title">Process</a>
+							<ul class="sub_sections">
+								<li class="mobile_close">Brainstorming Use Cases</li>
+								<li class="mobile_close">Needfinding & Personas</li>
+								<li class="mobile_close">Understanding Email Marketers</li>
+								<li class="mobile_close">Technical Feasibility</li>
+								<li class="mobile_close">Ideation, Prototypes, & Iterations</li>
+								
+							</ul>
+						</li>
+						<li id="ugc_in_email_process" class="section nav_drawer">
+							<a class="section_title">Design Decisions</a>
+							<ul class="sub_sections">
+								<li class="mobile_close">1) Inspire & Educate</li>
+								<li class="mobile_close">2) Layout Customization</li>
+								<li class="mobile_close">3) Preview</li>
+								<li class="mobile_close">4) Show How to Embed Code Snippet</li>
+							</ul>
+						</li>
+						<li class="section mobile_close">
+							<a class="section_title">Final Product</a>
+						</li>
+						<li id="ugc_in_email_results" class="section nav_drawer">
+							<a class="section_title">Results, Learnings, & V2</a>
+							<ul class="sub_sections">
+								<li class="mobile_close">Results & Reviews</li>
+								<li class="mobile_close">Learnings</li>
+								<li class="mobile_close">Future Iterations</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div id="main_panel" class="main_panel">
+				<section>
+					<h2 class="section_title">Interactive Social Emails</h2>
+					<div class="image header_image"></div>
+					<h3>Goal</h3>
+					<p>For this project, our goal was <b>to allow our ecommerce brands like Old Navy to quickly and easily add social media photos collected within our platform into their email campaigns.</b></p>
+					<p>This is a <b>new use case</b> for Pixlee. Up till now, Pixlee helped brands publish social media content mostly onto their websites, not into their email.</p>
+					<h3>Team</h3>
+					<div class="image_wrapper">
+						<div class="image team"></div>
+					</div>
+					<h3>Timeline</h3>
+					<div class="image_wrapper">
+						<div class="image timeline"></div>
+					</div>
+				</section>
+				<section>
+					<h2 class="section_title">Process</h2>
+
+					<h3>Brainstorming Use Cases</h3>
+					<p>In our initial brainstorming session, our CTO, marketing director, PM and I conceived two main ways of using photos in email:</p>
+					<p><b>1) Campaign-driven email:</b> Building upon what a few of our brands already do manually, we wanted to provide an easy way for brands to add photos into their email campaigns, like the one below. </p>
+					<div class="image_wrapper">
+						<div class="image usecase_1_campaign"></div>
+						<div class="caption">Campaign-driven email</div>
+					</div>
+					<p><b>2) Personalized product email:</b> These are emails personalized with photos of products that the customer has bought/browsed - purpose is to entice customers to shop further. <b>This was our more innovative solution and would differentiate Pixlee from our competitors.</b></p>
+					
+					<div class="image_wrapper">
+						<div class="image usecase_2_personalized"></div>
+						<div class="caption">Personalized product email</div>
+					</div>
+					<h3>Needfinding & Personas</h3>
+					<p>We were super excited with the potential use cases of social media photos in email and though a few brands were already sending out campaign-driven emails with social media photos, <b>how strong was the need?</b></p>
+					<p>To answer this question, the PM and I partnered with the customer success team to send a <b>brief survey</b> to our customers. 26% of our customer base (much more than usual) expressed <b>strong interest</b> in the ability of adding social media photos into email.</p>
+					<p>From this sample of customers, I then scheduled calls with brands to better understand their current process and their internal team dynamics. Here are <b>3 condensed basic personas.</b></p>
+					<div class="image_wrapper">
+						<div class="image personas"></div>
+						<div class="caption">Condensed personas</div>
+					</div>
+
+					<h3>Understanding Email Marketers</h3>
+					<p>Expanding into email meant I needed to understand email marketers (brand marketers historically worked in Pixlee).</p>
+					<p>Fortunately, as a designer at a small startup, I've worked very closely with our email marketers. Some insights were...</p>
+					<ul>
+						<li>Generally, when it comes to working on the actual email, marketers type text and paste images into their templates. Some know where to access the HTML in the email but would much rather not. </li>
+						<li>Email marketers generally have a designer to make the assets for the email. Sometimes the designer gives it to the marketers to paste into the email; other times the designer has direct access to the email template and will paste the image in herself.</li>
+						<li>Almost all Email Service Providers (ESPs) are laid out and work relatively similarily (I studied Hubspot MailChimp, Mad Mimi, & Intercom).</li>
+					</ul>
+
+					<div class="image_wrapper">
+						<div class="image_container">
+							<ul class="carousel_image_container" id="esps_carousel">
+								<li class="image hubspot"></li>
+								<li class="image mailchimp"></li>
+							</ul>
+							<div class="pagination">
+								<div class="prev carousel-nav"></div>
+								<div class="next carousel-nav"></div>
+							</div>
+						</div>
+						<div class="caption">Notice the similarities amongst all these ESPs.</div>
+					</div>
+					<p>In the best situation, where time and resources were infinite, it would’ve been much better to actually observe our customers work in their natural habitat. But given that wasn’t the case, I had to rely on our email marketers as proxies. </p>
+
+					<h3>Technical Feasibility</h3>
+					<p>In a technical brainstorming session, the PM, CTO, some engineers and I deliberated how best to serve these images for our users in email.</p>
+					<p>Though we explored several possible solutions, we ultimately decided upon <b>serving the images in a code snippet that the user would embed into their email's HTML.</b></p>
+					<p>In another engineering brainstorming session, we discovered that it was fairly complex to send out personalized product emails. Even though personalized product email is a much bigger differentiator than campaign emails, <b>we ultimately descoped it from this MVP.</b></p>
+
+					<h3>Ideation, Prototypes, & Iterations</h3>
+					<p>Following these brainstorming sessions, I started honing my design brainstorming around <b>providing the best flow to generating this code snippet</b>. </p>
+					<div class="image_wrapper">
+						<div class="image ideation">
+						</div>
+						<div class="caption">Whiteboarding one of the many flows I explored.</div>
+					</div>
+					<p>When the user flow was relatively ironed out, I made several interactive prototypes in Invision to both conduct usability tests and to collect feedback from stakeholders.</p>
+					
+					<div class="image_wrapper">
+						<div class="image_container">
+							<ul class="carousel_image_container" id="wireframes_carousel">
+								<li class="image wireframe_1"></li>
+								<li class="image wireframe_2"></li>
+							</ul>
+							<div class="pagination">
+								<div class="prev carousel-nav"></div>
+								<div class="next carousel-nav"></div>
+							</div>
+						</div>
+						<div class="caption">Interactive wireframe prototypes used to conduct usability tests and gather feedback.</div>
+					</div>
+					<p>Below, I will go into the specifics of how the findings of the usability tests affected the final deliverable.</p>
+				</section>
+
+				<section>
+					<h2 class="section_title">Design Decisions</h2>
+					<p>Before going into the particular design decisions, I want to share our existing workflow for publishing photos onto websites, as this is the framework I had to work within.</p>
+					<div class="image_wrapper">
+						<div class="image decision1_1">
+							<video id="email_decision1_1" class="mobile_video_none" width="100%" controls loop>
+								<source src="images/ugc_in_email/decision1_1.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="caption">Existing flow for publishing photos on to websites.</div>
+					</div>
+					
+					<h3>1) Inspire & Educate</h3>
+					<p><b>Problem:</b> Most brands haven’t started using social media photos in their emails so may not be aware of novel ways of using these photos in their email.</p>
+					<p><b>Hypothesis:</b> The user flow needs to provide a way for users to self educate on how social media photos can be used in emails (ie: inspirational galleries, shoppable Instagram).  The more inspired they are, the more they'll use this feature.</p>
+					<div class="image_wrapper">
+						<div class="image_container">
+							<ul class="carousel_image_container" id="inspire_prototype_carousel">
+								<li class="image inspire_prototype_1"></li>
+								<li class="image inspire_prototype_2"></li>
+							</ul>
+							<div class="pagination">
+								<div class="prev carousel-nav"></div>
+								<div class="next carousel-nav"></div>
+							</div>
+						</div>
+						<div class="caption">Exploring different ways of helping our users self educate.</div>
+					</div>	
+					<p><b>Usability Test Insight</b>: Users should be able to self educate  on the different ways to use social media photos in email, but not at the impediment of completing the main task, which is to generate an email snippet. One of the prototypes had too many options and became very frustrating to navigate.</p>
+					<p><b>Solution:</b> Don't overwhelm the user by providing only two main options, but still give the user the ability to self educate.</p>
+					<div class="image_wrapper ">
+						<div class="image decision2_1"></div>
+						<div class="caption">2 main options, plus the ability to learn more by clicking on the link at the bottom.</div>
+					</div>
+
+
+					<h3>2) Layout Customization</h3>
+					<p><b>Problem:</b> Every email campaign has a different purpose which means different aesthetic needs.</p>
+					<p><b>Hypothesis:</b> We need to provide a way for brands to easily customize their image layouts.</p>
+					<div class="image_wrapper ">
+						<div class="image customize_prototype"></div>
+						<div class="caption">Customize the layout and sort of the photos</div>
+					</div>
+					<p><b>Usability Testing Insight:</b> Users like to customize everything about the photo layout but the width - most didn't know the width of their email templates.</p>
+					<p><b>Solution: </b>Set the default width of the layout at 550px, the width of most email templates. Also, as antequated as email HTML is, we wrote the code to be as forgiving as possible.</p>
+					<div class="image_wrapper ">
+						<div class="image customize_final"></div>
+						<div class="caption">Defaulting width of email but allowing customization for all</div>
+					</div>
+
+
+					<h3>3) Preview</h3>
+					<p><b>Problem: </b>Users want to see how the images are laid out before they embed the code snippet into their emails.</p>
+					<p><b>Hypothesis: </b>Preview is the last checkpoint before the snippet is generated. It's a great way to see how the images will be arranged as well as to double check that each image clicks through to the proper link.</p>
+					<div class="image_wrapper ">
+						<div class="image preview_prototype"></div>
+						<div class="caption">Initially the preview was at the end. Later was moved to customization slide.</div>
+					</div>
+					<p><b>User Testing Insight: </b> Users preferred to have the preview, not at the end of the flow, but on the customization slide where that they can quickly judge whether images are too many/few or big/small for the intended space and can correct immediately. </p>
+					<p><b>Solution:</b> Preview of how the images would be displayed in the email changes in real-time as inputs are changed.</p>
+					<div class="image_wrapper ">
+						<div class="image decision3_1b">
+							<video id="email_decision3_1b" class="mobile_video_none" width="100%" controls loop>
+								<source src="images/ugc_in_email/decision3_1b.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="caption">Preview changes in real-time as user customizes.</div>
+					</div>
+					
+				
+
+					<h3>4) Show How to Embed Code Snippet</h3>
+					<p><b>Problem: </b> Users generally don't feel comfortable with code.</p>
+					<p><b>Hypothesis:</b> Without showing how to embed the HTML snippet in their email template, most will probably not know how.</p>
+					<p><b>User Testing Insight:</b> When users were first given the code without any assistance, they fumbled. Then they were given a GIF to follow, and all were able to embed properly.</p>
+					<p><b>Solution:</b> After the HTML code has been generated, we provide a link to our resource center that provides simple steps with GIFs to illustrate how the code is embedded. </p>
+					<div class="image_wrapper ">
+						<div class="clear">
+							<div class="image decision2_3"></div>
+							<div class="image embed_gif"></div>
+						</div>
+						<div class="caption">Bottom link leads to the GIF on the right.</div>
+					</div>
+
+				</section>
+
+				<section>
+					<h2>Final Product</h2>
+					<p>My final deliverables for this project were the email templates themselves, the workflow to generate these email templates (reviewed above), and also the accompanied educational pieces (eg. the GIFs and instructions on how to embed within the users' ESPs).</p>
+					<p>This video shows the whole user flow of how an email is generated, from the publishing flow, to Hubspot (what my marketing team uses), to an actual sent email. </p>
+					<div class="image_wrapper video">
+						<div class="image">
+							<video id="email_final_flow" width="100%" poster="images/ugc_in_email/poster.png" controls="true" loop >
+							  <source src="../projects_final_vids/email_video.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="caption">The whole flow of embedding photos into email.</div>
+					</div>
+					<p>As a matter of fact, here are some emails that our brands have sent that showcase how they've used social media photos in their email campaigns.</p>
+					
+					<div class="image_wrapper">
+						<div class="image_container">
+							<ul class="carousel_image_container" id="customer_image_carousel">
+								<li class="image customer_email_1"></li>
+								<li class="image customer_email_2"></li>
+								<li class="image customer_email_3"></li>
+							</ul>
+							<div class="pagination">
+								<div class="prev carousel-nav"></div>
+								<div class="next carousel-nav"></div>
+							</div>
+						</div>
+						<div class="caption">some of our customer emails with user generated content.</div>
+					</div>					
+
+				</section>
+				<section>
+					<h2>Results, Learnings, & V2</h2>
+					
+					<h3>Results & Reviews</h3>
+					<p>Photos in email launched September 15th. </p>
+					<p>Within the first week, we had 4 customers organically find the feature, embed the photos by themselves, and send over >100k emails!</p>
+					<p>Now, 3 months after the feature’s launch, Interactive Social Emails has become one of the fastest adopted features within our platform. <b>21 brands have started using this, of which 80% (17 brands) have sent out an average of 5 different emails with social media photos</b>. </p>
+					<p><b>Over Black Friday Weekend alone, our brands sent out 273k emails, with 30.5k click-throughs, which is a 11.2% click-through rate.</b> For benchmark purposes, most email campaigns struggle to hit a 4% click-through rate.</p>
+					<p>Even one of our brands A/B tested. <b>With Pixlee, the click-through rate on their emails was 9.3%. Without Pixlee, the click-through rate was 2.3%.</b> We have definitely proven our value. </p>
+					<p style="padding-bottom: 0">We knew, from talking to our brands at the beginning of the project, that their main issues with email campaigns, and our biggest selling points, are their need for</p>
+					<ul>
+						<li>more engaging content</li>
+						<li>save time and money on content creation</li>
+					</ul>
+					<p style="padding-bottom: 0">From our surveys that we recently collected, our brands confirmed the above two reasons, but additionally they love the</p>
+					<ul>
+						<li>Dynamic images (the images displayed are best performing) </li>
+						<li>Ease of use</li>
+					</ul>
+					<p>Additionally, marketing teams from Charlotte Russe, Carnival Cruises, and Quay Australia have been added to the platform  - so we are seeing <b>an increase of stakeholders within the platform</b>.</p>
+
+					<h3>Learnings</h3>
+					<p>Doing the due diligence on understanding our users’ needs, being aware of their team dynamics, understanding how they use their tools, user testing to validate or reject our hypotheses, and pushing the boundaries of our technology - <b>all these components together made this project a success.</b></p>
+					<p>If we're talkig solely about the design decisions within the workflow, here are some factors that I believe played into the success:</p>
+					<ul>
+						<li>The enticing red notification on the first slide attracted new users.</li>
+						<li>An easy and simple workflow quickly leads the user a simple piece of code to embed. No user onboarding necessary by our customer success team, which has been the case with many of our features.<li>
+						<li>How-to guides at the end of the workflow provide very simple and illustrated instructions of how to embed into any email.</li>
+						<li>Providing resources to allow users to discover other novel use cases for using social media photos in emails.</li>
+					</ul>
+
+					<h3>Future Iterations</h3>
+					<p>Three brands have requested becoming beta testers for the Personalized-Product Emails. This is undoubtly already on our list of things-to-do.</p>
+					<p style="padding-bottom: 0">Other features that we’re looking into are</p>
+					<ul>
+						<li>displaying user handles to properly attribute the photos</li>
+						<li>serving images of the same size (right now, horizontal and vertical images are mixed together, creating a somewhat uneven photo gallery)</li>
+						<li>header customization</li>
+					</ul>
+					<p>We started on this project with a hunch. The hunch was validated and this feature's success further proves it. But now we're wondering if this feature could become a sales generation tool. Currently no sales have closed because of email, but one account did upgrade. As we continuously improve this feature, one outstanding question is "If this were a stand-alone feature, would brands pay for it?"</p>
+				</section> 
+				<div id="mobile_bottom_nav">
+					<a id="previous_project" href="../project/influencer-relationship-manager.html">Previous</a>
+					<a id="all_projects" href="../index.html#recent_projects" >All Projects</a>
+					<a id="next_project" href="../project/filters-search.html" >Next</a>
+				</div>
+			</div>
+		</div>
+		<!-- google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-85114037-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<script type='text/javascript'>
+			$(function(){
+			    function setPlayPause() {
+			        playPause('#email_decision1_1');
+			        playPause('#email_decision3_1b');
+			        playPause('#email_final_flow');
+			    }
+			    function playPause(video_id) {
+			        $(video_id).isOnScreen() == true ? $(video_id)[0].play() : $(video_id)[0].pause()
+			    };
+			    $.fn.isOnScreen = function(){
+			        var win = $(window);
+			        var viewport = {
+			            top : win.scrollTop()
+			        };
+			        viewport.bottom = viewport.top + win.height();
+			        var bounds = this.offset();
+			        bounds.bottom = bounds.top + this.outerHeight();
+			        var videoHeight = this.height();
+			        var videoHalfHeight = videoHeight / 2;
+			        var videoQuarterHeight = videoHeight / 4;
+			        return ( (bounds.top + videoHalfHeight) < viewport.bottom && ((bounds.bottom - videoQuarterHeight) > viewport.top) );
+			    };
+			    setPlayPause();
+			    $(window).scroll(function() {
+			        setPlayPause();
+			    });
+			})
+		</script>
+	</body>
+</html>

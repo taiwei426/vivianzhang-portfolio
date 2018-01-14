@@ -1,0 +1,26 @@
+@import url(//db.onlinewebfonts.com/c/69942f4dd05decf2c8f4998484b42f23?family=FreightDisplayW01-SemiBoldIt);
+@import url(//db.onlinewebfonts.com/c/f3454840beab7d594b699ec4b321259b?family=FreightDisplayW01-Medium);
+@font-face {font-family: "FreightDisplayW01-SemiBoldIt";
+    src: url("//db.onlinewebfonts.com/t/69942f4dd05decf2c8f4998484b42f23.eot");
+    src: url("//db.onlinewebfonts.com/t/69942f4dd05decf2c8f4998484b42f23.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/69942f4dd05decf2c8f4998484b42f23.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/69942f4dd05decf2c8f4998484b42f23.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/69942f4dd05decf2c8f4998484b42f23.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/69942f4dd05decf2c8f4998484b42f23.svg#FreightDisplayW01-SemiBoldIt") format("svg");
+}
+@font-face {font-family: "FreightDisplayW01-Medium";
+    src: url("//db.onlinewebfonts.com/t/f3454840beab7d594b699ec4b321259b.eot");
+    src: url("//db.onlinewebfonts.com/t/f3454840beab7d594b699ec4b321259b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/f3454840beab7d594b699ec4b321259b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/f3454840beab7d594b699ec4b321259b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/f3454840beab7d594b699ec4b321259b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/f3454840beab7d594b699ec4b321259b.svg#FreightDisplayW01-Medium") format("svg");
+}
+.semi-bold{
+  font-family:FreightDisplayW01-SemiBoldIt, arial !important;
+  font-size: 50px;
+}
+.medium{
+  font-family:FreightDisplayW01-Medium !important;
+  font-size: 50px;
+}

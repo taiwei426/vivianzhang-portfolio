@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Influencer Relationship Manager | Vivian Zhang's Portfolio</title>
+		<meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../styles/master.css">
+		<script type='text/javascript' src='http://vivianzhang.com/js/jquery-3.1.0.js'></script>
+		<script type='text/javascript' src='../js/navigation.js'></script>
+		<script type='text/javascript' src='http://vivianzhang.com/js/lazy_load.js'></script>
+		<script type='text/javascript' src='http://vivianzhang.com/js/js.js'></script>
+		<script type='text/javascript'>
+			$( document ).ready(function() {
+			    $("div.lazy").lazyload({
+				      effect : "fadeIn"
+				  });
+			});
+		</script>
+	</head>
+	<body>
+		<div id="influencer_relationship_manager" class="body_wrapper project_wrapper">
+			<nav class="left_panel">
+				<a href="../index.html" id="logo"></a>
+				<ul id="page_navigation">
+					<li id="smart_search_context" class="section">
+						<a class="section_title">Intro</a>
+					</li>
+					<li id="smart_search_context" class="section">
+						<a class="section_title">The Problem & Goal</a>
+					</li>
+					<li id="smart_search_process" class="section">
+						<a class="section_title">Design Process & Decisions</a>
+						<ul class="sub_sections">
+							<li>Need Finding</li>
+							<li>Distilling</li>
+							<li>Issue 1: Cumbersome Excel Sheets</li>
+							<li>Issue 2: Lack of Record Keeping</li>
+							<li>Issue 3: No Data Tracking</li>
+							<li>Issue 4: Manual Processing</li>
+						</ul>
+					</li>
+					<li class="section">
+						<a class="section_title">Final Product</a>
+					</li>
+					<li class="section">
+						<a class="section_title">Results & Future Iterations</a>
+					</li>
+				</ul>
+				<ul id="pagination_wrapper">
+					<li id="all_projects"><a href="../index.html" >All Projects</a></li>
+					<li id="previous_project"><a href="../project/dynamic-photos-in-email.html">Previous</a></li>
+					<li id="next_project"><a href="../project/smart-search.html">Next</a></li>
+				</ul>
+			</nav>
+			<div class="main_panel">
+				<div id="mobile_nav">
+					<a href="../index.html" id="logo"></a>
+				</div>
+				<section>
+					<div id="header">
+						<div id="left_side">
+							<h2 class="section_title" style="font-size: 0; padding: 0;">Intro</h2>
+							<h1>Influencer Relationship Manager</h1>
+						</div>
+					</div>
+					<div class="image header_image lazy" data-original="images/customer_relationship_manager/header_image.png"></div>
+					<p style="padding-top: 30px;">As the user researcher, I sketched the first few mocks of what became this influencer relationship manager. With 50% of our target customers as active users, this is my proudest accomplishment yet.</p>
+				</section>
+				<section>
+					<h2 class="section_title">The Problem & Goal</h2>
+					<div id="about_pixlee" style="display: none;">
+						<p>Pixlee is a social marketing platform. </p>
+						<ul class="with_space" style="padding-bottom: 0;">
+							<li>Social: we collect photos from social media</li>
+							<li>Marketing: a brand uses our platform to collect all photos related to their brand so that they can
+								<ol>
+									<li>Analyze the sentiment and insights of their brand on social, and </li>
+								 	<li>Repurpose these pictures on their websites, in ad campaigns, emails, to name a few.</li>
+								 </ol>
+							</li>
+						</ul>
+					</div>
+					<div id="about_pixlee_toggle">about Pixlee</div>
+					<p>Up till this project, Pixlee had been a content collection tool, where we helped brands collect photos from social media.</p>
+					<p>And though we believed that the submitters of the content were paramount to a brand - the better the relationship between a brand and a submitter, the more the submitter posts about the brand on social media, and the more they positively influence their followers for the brand - Pixlee didn’t provide much to help brands foster these relationship.</p>
+					<p>What we built for this project was exactly that - a tool for our brands to harness the power of their influencers (submitters that have large number of followers and thus significant clout on social). </p>
+					<div class="pull_out">The final product, the customer relationship manager, became <b>a whole new product offering</b> within our existing platform.</div>
+					<p>At the time, we didn’t have any PMs, so we hired 2 consultant PMs, and my manager and I tagged-teamed. <b>I did the research and initial sketches, and my manager did the wireframes and final designs.</b></p>
+					<p>This is <b>my proudest project</b> as of date because of the sheer size of the project. But what I found most rewarding was connecting with our users and understanding this fascinating world of influencer marketing.</p>
+				</section>
+
+
+
+				<section>
+					<h2 class="section_title">Design Process & Decisions</h2>
+					
+					<h3 class="sub_section_header">Need Finding</h3>
+					<p>Sales and customer success helped me identified 5 accounts with influencer programs, and I scheduled calls and meeting with these customers to understand their goals, strategies, and day-to-day activities. Here are some general questions that I asked:</p>
+					<ul>
+						<li>What’s the reason for having influencers? What’s the ultimate goal? Awareness, engagement, ROI? </li>
+						<li>How many influencers do you have? Target number? Types & characteristics? Tiers? How do you decide you want to work with them? </li>
+						<li>How do you find influencers that fit the brand? </li>
+						<li>Briefly describe your job, what do you do day-to-day? Is managing influencers the only thing you do or do you have other responsibilities? </li>
+						<li>What’s your biggest pain point? </li>
+						<li>What types of information do you track as you’re working with influencers? What would be nice to track? </li>
+						<li>What tools do you use to get your job done? Excel? Email? Calendar?</li>
+					</ul>
+
+					<h3>Distilling</h3>
+					<p>As I was interviewing the users, 4 general pain points surfaced. Users...</p>
+					<ol>
+						<li>Had several super cumbersome excel sheets to track >100 influencers and their basic info </li>
+						<li>Did not have accurate record keeping</li>
+						<li>Lacked data which means they lacked the means to measure ROI on their influencer initiatives</li>
+						<li>Worked inefficiently due to the very manual process and the frequent switches between several different apps.</li>
+					</ol>
+					<p>At this point of the project, since I had the most knowledge about the users’ pain points in managing influencer programs, I was tasked to sketch out helpful functionalities that would mitigate these issues. This was at the exploration phase of the project so no scope was given.</p>
+					<p>After all the sketches, we discussed my ideas, and my manager took over from there. </p>
+					<p>The following sections show how I addressed each of the above mentioned issues. Included are images of my sketches as well as the final product. </p>					
+
+
+					<h3>Issue 1: Cumbersome Excel Sheets</h3>
+					<p>Users had several super cumbersome excel sheets to track >100 influencers and their basic info</p>
+					<p><b>Main Issues</b></p>
+					<ul>
+						<li>Several excel sheets to record influencers’ social infos, email, postal address, internal notes about the influencers, and categories that the influencer belonged in (eg: Petite, plus size, photographer, mommy blogger, athleisure, etc).</li>
+
+					</ul>
+					<p><b>Design Decisions</b></p>
+					<ul>
+						<li>Combine the various excel sheets into one organized table; hide information not immediately necessary from the table.
+							<ul class="colored_numbers">
+								<li class="explanation_title" data-number="1">The table acts as a contact book that is easily searchable and sortable. </li>
+								<li class="explanation_title" data-number="2">Clicking on the influencers within the contact book brings up their individual profiles in a lightbox, providing more details about the particular influencer.</li>
+								<li class="explanation_title" data-number="3">Allow users to organize and favorite top influencers.</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="image_wrapper">
+						<div class="image painpoint1_1a lazy" data-original="images/customer_relationship_manager/painpoint1_1a.png">
+							<div class="dot dot_1" data-number="1"></div>
+							<div class="dot dot_3" data-number="3"></div>
+						</div>
+						<div class="image painpoint1_1b lazy" data-original="images/customer_relationship_manager/painpoint1_1b.png">
+							<div class="dot dot_1" data-number="1"></div>
+							<div class="dot dot_3" data-number="3"></div>
+						</div>
+						<div class="caption">Compacted influencer info organized in contact book</div>
+					</div>
+					<div class="image_wrapper">
+						<div class="image painpoint1_2a lazy" data-original="images/customer_relationship_manager/painpoint1_2a.png">
+							<div class="dot dot_2" data-number="2"></div>
+							<div class="dot dot_3" data-number="3"></div>
+						</div>
+						<div class="image painpoint1_2b lazy" data-original="images/customer_relationship_manager/painpoint1_2b.png">
+							<div class="dot dot_2" data-number="2"></div>
+							<div class="dot dot_3" data-number="3"></div>
+						</div>
+						<div class="caption">Individual influencer profiles contained more detailed info about each influencer</div>
+					</div>
+					
+					<h3>Issue 2: Lack of Record Keeping</h3>
+					<p>Users did not have an accurate record of all interactions between brand and influencer.</p>
+					<p><b>Main Issues</b></p>
+					<ul>
+						<li><b>Minimal tracking of brand’s actions:</b> Emails were the most tracked. No one tracked, though everyone expressed interest in, comments or likes on posts or direct messages.</li>
+						<li><b>Minimal tracking of influencers’ actions:</b> Few brands tracked, though all brands wanted to track, activities that influencers have done for the brand, such as tagging brands in a post or commenting/liking brand posts on social.</li>
+						<li>If interactions were tracked, they were done in disjointed excel sheets making it difficult to analyze overarching trends (eg: when was the last time we communicated?). </li>
+					</ul>
+					<p><b>Design Decisions</b></p>
+					<ul>
+						<li>The essence of all issues listed above is that brands needed an accurate, and best if automatic, record keeping, so I went with an activities feed.
+							<ul class="colored_numbers">
+								<li class="explanation_title" data-number="1">Activities feed automatically pulled in all activities performed by the influencers on social (eg: posting about the brand, liking and commenting on brand’s posts).</li>
+								<li class="explanation_title" data-number="2">Since activities happen on an individual level, it was most logical to put the activities feed into the influencer’s profile along with the influencer’s basic contact info. </li>
+								<li class="explanation_title" data-number="3">Emails are automatically tracked within the activities feed. As a matter of fact, emails can be completely written within the platform (more below).</li>
+								<li class="explanation_title" data-number="4">Notifications help our users keep abreast of any new activities by their influencers. </li>
+							</ul>
+						</li>
+					</ul>
+					<div class="image_wrapper">
+						<div class="image painpoint2_1a lazy" data-original="images/customer_relationship_manager/painpoint2_1a.png">
+							<div class="dot dot_1" data-number="1-2"></div>
+							<div class="dot dot_3" data-number="3"></div>
+						</div>
+						<div class="image painpoint2_1b lazy" data-original="images/customer_relationship_manager/painpoint2_1b.png">
+							<div class="dot dot_1" data-number="1-2"></div>
+						</div>
+						<div class="caption">Activities feed to automatically track interactions between user and influencer</div>
+					</div>
+					<div class="image_wrapper">
+						<div class="image painpoint2_2a lazy" data-original="images/customer_relationship_manager/painpoint2_2a.png">
+							<div class="dot dot_4" data-number="4"></div>
+						</div>
+						<div class="image painpoint2_2b lazy" data-original="images/customer_relationship_manager/painpoint2_2b.png">
+							<div class="dot dot_4" data-number="4"></div>
+						</div>
+						<div class="caption">Notifications help our users keep abreast of any new activities</div>
+					</div>
+
+
+					<h3>Issue 3: No Data Tracking</h3>
+					<p>Lacked data which means they lacked the means to measure ROI on their influencer initiatives.</p>
+					<p><b>Main Issues</b></p>
+					<ul>
+						<li>Few brands tracked, though all brands wanted to track, the performance of their influencers’ performance on social. Basic questions they wanted to answer were
+							<ul>
+								<li>What are the best performing content from each influencer?</li>
+								<li>What are the influencers’ performances over time?</li>
+								<li>Is the content posted by the influencer about the brand resonating with the influencers’ followers?</li>
+								<li>What is the performance of each of my influencers and who should I continue to work with?</li>
+							</ul>
+						</li>
+					</ul>
+					<p><b>Design Decisions</b></p>
+					<ul>
+						<li>Automatically track basic data and calculate the performance of the photos that influencers post about the brand. As a way of benchmarking the influencers' posts about the brand, we'll also provide their general post performance on all content (not just brand content)</li>
+						<li>This data is shown in 2 ways
+							<ul class="colored_numbers">
+								<li class="explanation_title" data-number="1">Overall: All influencers' performances are aggregated in a table for easy comparison. Date picker allows for the data to be broken down into periods for more accurate analysis, especially when analyzing performance of different monthly or quarterly campaigns.</li>
+								<li class="explanation_title" data-number="2">Individual: deeper dive into each individual influencer, especially to see which photos are the best performing.</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="image_wrapper">
+						<div class="image painpoint3_1a lazy" data-original="images/customer_relationship_manager/painpoint3_1a.png">
+							<div class="dot dot_1" data-number="1"></div>
+						</div>
+						<div class="image painpoint3_1b lazy" data-original="images/customer_relationship_manager/painpoint3_1b.png">
+							<div class="dot dot_1" data-number="1"></div>
+						</div>
+						<div class="caption">Table view: quickly find pertinent influencers</div>
+					</div>
+					<div class="image_wrapper">
+						<div class="image painpoint3_2a lazy" data-original="images/customer_relationship_manager/painpoint3_2a.png">
+							<div class="dot dot_2" data-number="2"></div>
+						</div>
+						<div class="image painpoint3_2b lazy" data-original="images/customer_relationship_manager/painpoint3_2b.png">
+							<div class="dot dot_2" data-number="2"></div>
+						</div>
+						<div class="caption">Table view: quickly find pertinent influencers</div>
+					</div>
+
+					<h3>Issue 4: Manual Processing</h3>
+					<p>Users worked inefficiently due to the very manual process and the frequent switches between several different apps.</p>
+					<p><b>Main Issues</b></p>
+					<ul>
+						<li>Lots of switching back and forth between Instagram, excel sheets, and email. (Eg: Find an influencer's post, go to excel to track the data. Just emailed an influencer, go to excel to track the conversation.)</li>
+						<li>If a brand tracked any of the data points mentioned in Issue #3, the user had to manually find the photos on social, log the number of likes and comments in excel, and calculate any other data points. And this is for every post. Of every influencer. This could easily be hundreds of number to track and that's why users usually do not because of lack of bandwidth.</li>
+					</ul>
+					<p><b>Design Decisions</b></p>
+					<ul>
+						<li>Combine the functions of the users' most used apps (Instagram, excel, and email) into one.
+							<ul class="colored_numbers">
+								<li class="explanation_title" data-number="1">Can directly email influencer within the platform. Email is automatically tracked within the activities feed for record keeping. This was later descoped from our final shipment (more on this later).</li>
+								<li class="explanation_title" data-number="2">When influencers’ photos are pulled into the activities feed, brands can comment/like right within the activities feed without switching into Instagram.</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="image_wrapper">
+						<div class="image painpoint4_1a lazy" data-original="images/customer_relationship_manager/painpoint4_1a.png">
+							<div class="dot dot_1a" data-number="1"></div>
+							<div class="dot dot_1b" data-number="1"></div>
+							<div class="dot dot_2" data-number="2"></div>
+						</div>
+						<div class="caption">Emailing straight from the platform was  descoped so there is no screenshot of the final feature</div>
+					</div>
+					<ul>
+						<li>But, some functions of excel, Instagram, and email can’t be replaced so don’t force them.
+							<ul class="colored_numbers">
+								<li class="explanation_title" data-number="3">Be able to easily navigate to influencers’ Instagram to browse photos and hunt for similar influencers.</li>
+								<li class="explanation_title" data-number="4">Be able to easily import and export CSV documents, especially data for more in-depth analysis on both the influencer level and the overarching influencer program level.</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="image_wrapper">
+						<div class="image painpoint4_2a_1 lazy" data-original="images/customer_relationship_manager/painpoint4_2a_1.png">
+							<div class="dot dot_4" data-number="4"></div>
+						</div>
+						<div class="image painpoint4_2a_2 lazy" data-original="images/customer_relationship_manager/painpoint4_2a_2.png">
+							<div class="dot dot_4" data-number="4"></div>
+						</div>
+						<div class="image painpoint4_2a_3 lazy" data-original="images/customer_relationship_manager/painpoint4_2a_3.png">
+							<div class="dot dot_4" data-number="4"></div>
+						</div>
+						<div class="image painpoint4_2b lazy" data-original="images/customer_relationship_manager/painpoint4_2b.png">
+							<div class="dot dot_4" data-number="4"></div>
+						</div>
+						<div class="caption">Table view: quickly find pertinent influencers</div>
+					</div>
+
+
+					<p>After the initial sketches, we continuously touched base with engineers on the feasibility of our ideas. </p>
+					<p>We also descoped the email functionality. Despite this being a key feature, our platform didn’t already have any email functionality and email itself would’ve doubled the length of the project.</p>
+					<p>As my manager prototyped, I jumped on calls with customers to gather feedback on the mocks, and we continuously iterated. </p>
+				</section>
+				<section>
+					<h2>Final Product</h2>
+					<div class="image video">
+						<video class="hover_play" width="600" controls>
+						  <source src="images/customer_relationship_manager/irm_video.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+						</video>
+					</div>
+				</section>
+				<section>
+					<h2>Results & Future Iterations</h2>
+					<p>We launched this part of the platform in April 2016. </p>
+					<p>Since then, we’ve gathered feedback and have made some minor iterations, many of which were in the initial mocks that had been descoped. </p>
+					<ul>
+						<li>Collecting from multiple hashtags</li>
+						<li>More robust data options (selecting specific date ranges, downloadable data for further analysis)</li>
+						<li>Bulk tagging</li>
+					</ul>
+					<p>Currently, <b>of the ~50 accounts that have influencer programs, 25 actively use this feature</b> (we currently work with ~125 accounts).</p>
+					<p>Influencer marketing is relatively new, but we do believe that the industry is moving towards this direction and that more brands will have influencer programs. This v1 of our influencer relationship manager laid the groundwork for much to come, but I believe that for us to be a prominent player within this changing landscape, there are <b>2 main issues that we need to resolve:</b></p>
+					<ol>
+						<li>Robust data to provide clear ROI for influencer program:
+							<ul>
+								<li>How much revenue has an influencer generated by redirecting traffic from their Instagram account to the brand’s ecommerce site?</li>
+								<li>After an influencer posted onto social, was there increased traffic to the brand’s site?</li>
+								<li>How many of the influencers’ followers started following the brand on social?</li>
+							</ul>
+						</li>
+						<li>Minimize users’ manual processes
+							<ul>
+								<li><b>Discovering influencers is super manual</b> - an issue that every one of our users faces. It currently involves searching through an existing influencer’s friends or people they follow or others similar to that influencer that Instagram recommends. Does this potential influencer’s photos match that of the brand’s? Does this potential influencer even like the brand or can clearly represent what the brand represents? </li>
+								<li><b>Email Tracking</b> - Especially when email is the key method for brands to communicate with their influencers, we need to provide a better alternative to manually tracking these email interactions</li>
+							</ul>
+						</li>
+					</ol>
+				</section>
+				<div id="mobile_bottom_nav">
+					<a id="previous_project" href="../project/dynamic-photos-in-email.html">Previous</a>
+					<a id="all_projects" href="../index.html#projects" >All Projects</a>
+					<a id="next_project" href="../project/smart-search.html" >Next</a>
+				</div>
+			</div> <!-- end of main panel -->
+		</div>
+		<!-- google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-85114037-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
+</html>

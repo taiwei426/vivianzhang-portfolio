@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Filters & Search | Vivian Zhang's Portfolio</title>
+		<!-- <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+<!-- 		<meta name="viewport" content="width=device-width, height=device-height"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="../styles/master.css">
+		<script type='text/javascript' src='../js/jquery-2.2.4.min.js'></script>
+		<script type='text/javascript'>
+			$(function() {
+				$("#vz_loader").delay(1000).fadeOut("fast");
+				$(".pageload-overlay").delay(1000).fadeOut("slow");
+				$(".project_content").delay(1000).removeClass("no_scroll");
+			});
+		</script>
+		<script src="https://use.typekit.net/fal1kno.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script type='text/javascript' src='../js/js.js'></script>
+		<script type='text/javascript' src='../js/navigation.js'></script>
+	</head>
+	<body style="overflow-y: hidden" >
+		<div id="loader" class="pageload-overlay">
+			 <svg id="vz_loader" viewBox="0 0 114.3 64.3">
+			  	<clipPath id="cp-text">
+			    	<path d="M114.1,35.6c-2.7,16.3-11.5,28.1-29.8,28.1h-6.8L112.3,0H76.7H61.6H50.3l0.1,0.6c14.7,0,9.9,12.8,5.9,21.7l-9.8,21.7L33.2,14.7c-3.4-7.4-4.2-14.2,4-14.2l0-0.5H0v0.5c6.3,0,9.8,4.7,14.7,15L37.9,64l18.8-41.4
+				c1.1-2.3,3.3-7.2,3.3-7.2s5-14.6,22.5-14.7h8.5L56.3,64.3h53.5l4.4-28.8H114.1z"/>
+			  	</clipPath>
+			  	<g clip-path="url(#cp-text)">
+			    	<rect  class="anim-shape" width="100%" height="100%" ></rect>
+			  	</g>
+			</svg>
+		</div>
+		<div id="mobile_nav"></div>
+		<div id="smart_search" class="body_wrapper project_wrapper project_content">
+			<nav id="left_panel" class="left_panel">
+				<a href="../index.html" class="logo"></a>
+				<div class="navigation_wrapper">
+					<ul class="pagination_wrapper">
+						<li id="all_projects"><a href="../index.html#recent_projects" >All Projects</a></li>
+						<li id="previous_project"><a href="../project/interactive-social-emails.html">Previous</a></li>
+						<li id="next_project"><a href="../project/influencer-relationship-manager.html">Next</a></li>
+					</ul>
+					<ul class="page_navigation">
+						<li id="workflow_intro" class="section nav_drawer">
+							<a class="section_title project_title">Filters & Search</a>
+							<ul class="sub_sections">
+								<li class="mobile_close">Goal</li>
+								<li class="mobile_close">Team</li>
+								<li class="mobile_close">Timeline</li>
+							</ul>
+						</li>
+						<li id="workflow_process" class="section nav_drawer">
+							<a class="section_title">Process</a>
+							<ul class="sub_sections">
+								<li class="mobile_close">Gathering User Feedback</li>
+								<li class="mobile_close">Synthesis</li>
+							</ul>
+						</li>
+						<li id="workflow_search" class="section nav_drawer">
+							<a class="section_title">Search</a>
+							<ul class="sub_sections">
+								<li class="mobile_close">Search Issues</li>
+								<li class="mobile_close">Engineering Constraints</li>
+								<li class="mobile_close">Design Research & Sketches</li>
+								<li class="mobile_close">Dropdowns</li>
+								<li class="mobile_close">Progressive Disclosure</li>
+								<li class="mobile_close">Search Across the Top</li>
+								<li class="mobile_close">Deletion Behavior</li>
+							</ul>
+						</li>
+						<li id="workflow_filters" class="section nav_drawer">
+							<a class="section_title">Filters</a>
+							<ul class="sub_sections">
+								<li class="mobile_close">Initial Sketches & Eliminations</li>
+								<li class="mobile_close">Inbox vs Approved Filters</li>
+								<li class="mobile_close">Reducing Clutter</li>
+							</ul>
+						</li>
+						<li class="section mobile_close">
+							<a class="section_title">Final Product</a>
+						</li>
+						<li class="section mobile_close">
+							<a class="section_title">Results & Future Iterations</a>
+						</li>
+					</ul>
+				</div>
+				<!-- <ul class="pagination_wrapper">
+					<li id="all_projects"><a href="../index.html#recent_projects" >All Projects</a></li>
+					<li id="previous_project"><a href="../project/interactive-social-emails.html">Previous</a></li>
+					<li id="next_project"><a href="../project/influencer-relationship-manager.html">Next</a></li>
+				</ul> -->
+			</nav>
+			
+			<div id="main_panel" class="main_panel">
+				
+				<section>
+					<h2 class="section_title">Filters & Search</h2>
+					<div class="image header_image"></div>
+					<h3>Goal</h3>
+					<p><b>To increase the efficiency of workflow of photos in the Inbox and the Approved, </b>two main parts of our enterprise platform.</p>
+					<ul>
+						<!-- <li>Photos are organized in albums, and there are 2 parts to an album: </li> -->
+						<li><b>Inbox: </b>where collected social media photos are trashed or kept (moved to Approved) </li>
+						<li><b>Approved: </b>where the kept photos are managed: tagging products, requesting permission, organizing into other albums</li>
+					</ul>
+					<div class="image_wrapper">
+						<div class="image_container">
+							<ul class="carousel_image_container" id="albums_carousel">
+								<li class="image old_inbox"></li>
+								<li class="image old_approved"></li>
+							</ul>
+							<div class="pagination">
+								<div class="prev carousel-nav"></div>
+								<div class="next carousel-nav"></div>
+							</div>
+						</div>
+						<div class="caption">The two sections of our albums: the inbox and the approved</div>
+					</div>
+					<h3>Team</h3>
+					<div class="image_wrapper">
+						<div class="image team"></div>
+					</div>
+					<h3>Timeline</h3>
+					<div class="image_wrapper">
+						<div class="image timeline"></div>
+					</div>
+				</section>
+				<section>
+					<h2 class="section_title">Process</h2>
+					
+					<h3>Gathering User Feedback</h3>
+					<p>My PM and I first <b>sat down with the customer success team</b> to hear the general trends of our customers' complaints regarding workflow issues. The PM then went through the customer logs as I watched <b>screen recordings</b> of customers that were heavy users of this part of our platform. Of these users, I <b>jumped on the phone</b> with 5 that spanned the gamut of our customer base to gather more information regarding their needs and workflows.</p>
+					<p>Below are my notes from these conversations.</p>
+					<div class="image_wrapper">
+						<div class="image compiled_notes"></div>
+						<div class="caption">My notes from phone conversations with users</div>
+					</div>
+
+					<h3>Synthesis</h3>
+					<p>The notes above were further synthesized and distilled into 3 general trends:</p>
+					
+					<div class="image_wrapper">
+						<div class="image venn_diagram"></div>
+						<div class="caption">Research distilled into 3 key findings</div>
+					</div>
+					<p>Very quickly, we realized that there were some quick wins and some that would take much more engineering:</p>
+					<ul>
+						<li><b>Easier:</b> implement more robust searches and filters to help users find the relevant photos (ie: photos that don't have products tagged yet, photos where the submitters' permissions haven't been requested).</li>
+						<li><b>Harder:</b> our current computer vision and spam detection were not serving the needs of all our varied customers. Currently, the same types of computer vision and spam detection were being applied to all customers, regardless of industry (ski resort vs bathing suit company) or company size (Sleefs vs Carnival Cruises) .</li>
+					</ul>
+					<p>Our research helped us confirm the issues within the Inbox and Approved parts of our albums and helped us navigate which features to build, but we split the work up across several projects. <b>We first worked on the easiest win: adding more search and filter capabilities - this is what the remainder of this case review will cover.</b> Since then we have also implemented better computer vision and spam detection, but because there was minimal design work from my end, I will leave that part out of this project review.</p>
+				</section>
+				<section>
+					<h2 class="section_title">Search</h2>
+					<div class="image_wrapper">
+						<div class="image old_search"></div>
+						<div class="caption">Our old search was small and marginalized, making it difficult to find</div>
+					</div>
+					<h3>Search Issues</h3>	
+					<p>From all the research, the key issues with our search, regardless of being in Inbox or Approved, were... </p>
+					<ul class="">
+						<li>Search was difficult to find</li>
+						<li>It was not obvious what was searchable</li>
+						<li>When searching usernames and hashtags, are @ and # required?</li>
+						<li style="padding-bottom: 10px;">Needed more search capabilities:</li>
+						<ul class="with_space">
+							<li>In addition to usernames, hashtags, and captions, users also needed a way to search for products tagged in the photos, find text written within internal notes of the photo, and figure out what other albums that the photos belonged to</li>
+							<li>Users also wanted to search for opposites, for example, find photos that are not tagged #nike.</li>
+						</ul>
+					</ul>
+					
+					<p>We organized our search needs in a more comprehensive manner:</p>
+					<div class="image_wrapper">
+						<div class="image list"></div>
+						<div class="caption">Organizing all our search functionalities</div>
+					</div>					
+					<h3>Engineering Constraints</h3>
+					<p>During a conversation with our backend engineer, he mentioned that especially with the additional search functionalities, <b>a blanketed search</b> (typing “shoe” without designating if this is hashtag, caption, username, product, etc) <b>is highly costly when searching through millions of photos within our database</b>.</p>
+					<p>Our design solution needed a way for the user to designate what type of search they're performing. For example, I'm searching Nike, a product name, not the hashtag, userhandle, or a word in the caption.</p>
+					<h3>Design Research & Sketches</h3>
+					<p>Our search needed to be very robust, but search itself isn't a new problem, so the first thing I did was look through many consumer and enterprise platforms' search/filter capabilities to see how they were structured.</p>
+					<div class="image_wrapper">
+						<div class="image design_research"></div>
+						<div class="caption">Design research into robust searches in both enterprise and consumer platforms </div>
+					</div>
+					<p>With a good idea of how I'd like to structure our search, I drew some quick sketches to visualize what our search would look like, which I then took over to Sketch to refine. </p>
+					<div class="image_wrapper">
+						<div class="image sketches"></div>
+						<div class="caption">Sketches and prototypes</div>
+					</div>
+					<p>I had prototyped the gist of the interactions in Invision so that the engineer could see my overall vision, but because the interactions were quite nuanced, I worked very closely with the engineer to iron out the kinks. The following are the final design decisions along with the reasoning: </p>
+					<div class="image_wrapper more_top_space less_bottom_space">
+						<div class="image explanation_1">
+							<div class="dot dot_1" data-number="1"></div>
+							<div class="dot dot_2" data-number="2"></div>
+							<div class="dot dot_3" data-number="3"></div>
+						</div>
+						<div class="caption">Zoomed in view of new search interactions</div>
+					</div>
+					<h3 class="explanation_title" data-number="1">Dropdowns</h3>
+					<ul>
+						<li>display and educate selection choices</li>
+						<li>lends to countless search permutations as users can combine attributes, filters, and text</li>
+						<li>allows for the user to determine if the word “shoe” that they’re searching for is in the caption, hashtag, etc - reduces backend computation</li>
+					</ul>
+					<h3 class="explanation_title" data-number="2">Progressive Disclosure</h3>
+					<ul>	
+						<li>action is taken before subsequent action appears - helps reduce cognitive load and confusion of having 2 dropdowns and input field shown simultaneously </li>
+					</ul>
+
+					<h3 class="explanation_title" data-number="3">Search Across the Top</h3>
+					<ul>
+						<li>took the marginalized and difficult-to-find search from the left panel and placed it front and center, allowing the search to take more visual space so that it'll be less easily missed. </li>
+						<li>allowed more space to display all searchable attributes, especially since users needed to be informed by many new search functionalities that we added</li>
+					</ul>
+					<div class="image_wrapper more_top_space less_bottom_space">
+						<div class="image explanation_2"><div class="dot dot_4" data-number="4"></div></div>
+						<div class="caption">Zoomed in view of deleting interaction</div>
+					</div>
+					<h3 class="explanation_title" data-number="4">Deletion Behavior</h3>
+					<ul>
+						<li>pressing backspace will delete the text and also the search filters and attributes - allows users to work quickly and in the typing manner that they’re used to</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Filters</h2>
+					<div class="image_wrapper">
+						<div class="image old_filters"></div>
+						<div class="caption">Old Inbox filters (left) & old Approved filters weren't satisfying the customers' needs</div>
+					</div>
+					<p>From our research, it became blatantly obvious that the original Inbox missed quite a lot of important filters, and our Approved filters, though hefty looking, did not include many of critical filters that our users needed for their day-to-day work.</p>
+					<p>After research, just like what we had done for search, my PM and I compiled a list of filters that our customers needed.</p>
+					<div class="image_wrapper">
+						<div class="image filters_list"></div>
+						<div class="caption">List of Filters</div>
+					</div>
+
+					<h3>Initial Sketches & Eliminations</h3>
+					<p>I explored many different ways to present filters, from combining search and filters together, to saving common queries, to hiding/expanding filters along the left, but I ultimately kept the filters exactly where they were originally located.</p>
+					<div class="image_wrapper">
+						<div class="image sketches_filters"></div>
+						<div class="caption">Sketches of filters</div>
+					</div>
+					<h3>Inbox vs Approved Filters</h3>
+					<p>As mentioned previously, for the most part, Inbox and Approved have different workflows but the workflows varied from user to user. To streamline workflows without disrupting others, our solution was to <b>include relatively the same filters in both Inbox and Approved but organized in terms of what is commonly used  inthe Inbox and Approved. </b> This provided efficiency for most without preventing the few from continuing with their current workflows.</p>
+					<div class="image_wrapper ">
+						<div class="image new_filters"></div>
+						<div class="caption">Inbox (left) & Approved (right) filters</div>
+					</div>
+					<!-- <p>We also decided to <b>track which filters each user is clicking on most, and these are then .</b></p> -->
+					
+					<h3>Reducing Clutter</h3>
+					<p>The first mock had all 40 filters shown and was too overwhelming, so future iterations explored different ways of hiding the filters. </p>
+					<div class="image_wrapper">
+						<div class="image filters"></div>
+						<div class="caption">How to best present the filters?</div>
+					</div>
+					<p><b>The final design left the important, most-used filters open by default for easy, no-hassle selection.</b> The less important filters were closed to reduce clutter but the user could still easily see the types of filters that are available.</p>
+				</section>
+				<section>
+					<h2>Final Product</h2>
+					<h3>The before</h3>
+					<div class="image_wrapper">
+						<div class="image final_before"></div>
+						<div class="caption">Our old search was faint, marginalized, and small, making it difficult to find</div>
+					</div>
+					<h3>The after</h3>
+					<div class="image_wrapper video">
+						<div class="image">
+							<video id="search_final" width="100%" poster="images/smart_search/poster.png" controls="true" loop>
+							  <source src="../projects_final_vids/filters_search_video.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="caption">Prominently placed, the new search has more capabilities with a more intuitive design</div>
+					</div>
+				</section>
+				<section>
+					<h2>Results & Future Iterations</h2>
+					<p>Within the last 2 months (Sept 2016) since it’s launch,</p>
+					<p><b>Average number of searches per month rose by ~50%.</b></p>
+					<p><b>Some other notable findings about search: </b></p>
+					<ul>
+						<li>Different types of searches were conducted in different parts of the platform:
+							<ul>
+								<li>Before a photo has been collected, brands are more interested in finding photos by hashtags.</li>
+								<li>But once a photo has been collected, brands are more interested in finding photos with specific products or that have been organized into other albums</li>
+							</ul>
+						</li>
+						<li>Regardless of before or after a photo has been collected, a brand will always want to find photos by usernames most.</li>
+					</ul>
+					<p>Unfortunately, I couldn't have access to the data that measured the success of the filters. But, <b>anecdotally, none of our customers have complained about any missing filters.</b></p> 
+					<p><b>Future Iterations:</b></p>
+					<ul>
+						<li>Order the drop downs according to the most used searches within that part of the platform</li>
+						<li>Surface the top filters for each individual user and presenting these filters at the top while hiding the rest</li>
+						<li>Also, as our users become more accustomed to this new search, we'll see if requests flow in for "and" and "or" searches. We already have these backend capabilities, but we're waiting for customer requests and validation before building a more robust experience. </li>
+					</ul>
+					
+					<p>As mentioned previously, our research also launched a whole series <b>updates to our computer vision and image recognition.</b> Both are to improve the workflows within Inbox, especially for finding relevant photos to approve and identifying spam to delete.</p>
+				</section>
+				<div id="mobile_bottom_nav">
+					<a id="previous_project" href="../project/interactive-social-emails.html">Previous</a>
+					<a id="all_projects" href="../index.html#recent_projects" >All Projects</a>
+					<a id="next_project" href="../project/influencer-relationship-manager.html" >Next</a>
+				</div>
+				
+			</div>
+		</div>
+		<!-- google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-85114037-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+		<script type='text/javascript'>
+			$(function(){
+			    function setPlayPause() {
+			        playPause('#search_final');
+			    }
+			    function playPause(video_id) {
+			        $(video_id).isOnScreen() == true ? $(video_id)[0].play() : $(video_id)[0].pause()
+			    };
+			    $.fn.isOnScreen = function(){
+			        var win = $(window);
+			        var viewport = {
+			            top : win.scrollTop()
+			        };
+			        viewport.bottom = viewport.top + win.height();
+			        var bounds = this.offset();
+			        bounds.bottom = bounds.top + this.outerHeight();
+			        var videoHeight = this.height();
+			        var videoHalfHeight = videoHeight / 2;
+			        var videoQuarterHeight = videoHeight / 4;
+			        return ( (bounds.top + videoHalfHeight) < viewport.bottom && ((bounds.bottom - videoQuarterHeight) > viewport.top) );
+			    };
+			    setPlayPause();
+			    $(window).scroll(function() {
+			        setPlayPause();
+			    });
+			});
+
+
+		</script>
+	</body>
+</html>
