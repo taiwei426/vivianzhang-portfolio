@@ -170,8 +170,9 @@
 						<div class="main_panel">
 							<div class="vert_aligner">
 								<h2>About</h2>
-								<p>Currently I work at <a class="link" href="https://www.pixlee.com/" target="_blank">Pixlee</a>, where we help brands like Go Pro, Rent the Runway, Old Navy, Kimpton Hotels, Peet's Coffee, and Carnival Cruises bridge the gap between social media and their ecommerce experiences. </p>
-								<p>In my previous life, I was a <a class="link" href="https://www.teachforamerica.org/" target="_blank">teacher</a>. And prior to that, I studied History and International Relations at the <a class="link" href="http://www.upenn.edu/" target="_blank">University of Pennsylvania</a>.</p>
+								<p>Currently I work at <a class="link" href="https://www.joist.com/" target="_blank">Joist</a>, building a mobile app that helps trade contractors estimate, invoice, and request payments.</p>
+								<p>I previously worked at <a class="link" href="https://www.pixlee.com/" target="_blank">Pixlee</a>, where we helped brands like Go Pro, Rent the Runway, and Old Navy bridge the gap between social media and their ecommerce experiences. </p>
+								<p>In another life, I was a <a class="link" href="https://www.teachforamerica.org/" target="_blank">teacher</a>, and I studied at the <a class="link" href="http://www.upenn.edu/" target="_blank">University of Pennsylvania</a>.</p>
 								<p>Reach out and let's grab coffee! I always love meeting new people!</p>
 								<div class="connect_icons_wrapper">
 									<a href="https://www.linkedin.com/in/taiweivivianzhang" class="linkedin" target="_blank"></a>
@@ -263,60 +264,6 @@
 		}
 		$(".thumbnail").click(function(e) {   
 			openLightbox($(this).attr("name")*1);
-			/*$('html').toggleClass('no_scroll');*/
-			/*if($('body').hasClass('mfp-zoom-out-cur')){
-		    	$('html').addClass('no_scroll');
-		    }else{
-		    	$('html').removeClass('no_scroll');
-		    }*/
 		});
-
-
-		/*$( window ).on( "load", function(){
-			var screenHeight = $(window).height();
-			var screenHalf = screenHeight / 2;
-			
-			var aboutSectionTop1 = $("#about_me").offset().top;
-			var aboutSectionTop2 = Math.floor($("#about_me").offset().top);
-					
-			
-			$(window).bind('scroll', function() {
-				var scrollPosition = $(window).scrollTop();
-				
-				var helloDifference = helloTop - scrollPosition;
-				
-
-
-				if ( (aboutSectionTop - scrollPosition) < helloDifference - 60) {
-				  $('.left_panel').addClass('white');
-				}else{
-					$('.left_panel').removeClass('white');
-				}
-			});
-		});*/
-		/*var helloTop = $("#hello_nav_title").offset().top;
-		var projectsTop = $("#projects_nav_title").offset().top;
-		var otherTop = $("#other_nav_title").offset().top;
-		var aboutTop = $("#about_nav_title").offset().top;
-		var aboutSectionTop = $("section#about").offset().top;
-		
-
-		$(window).bind('scroll', function() {
-			var scrollPosition = $(window).scrollTop();
-			
-			var helloDifference = helloTop - scrollPosition;
-			
-
-			if ( (aboutSectionTop - scrollPosition) < helloDifference - 60) {
-			  $('#hello_nav_title').addClass('white');
-			}else if ( (aboutSectionTop - scrollPosition) < projectsTop) {
-				$('#projects_nav_title').addClass('white');
-				$('#projects_nav_title').prevAll().addClass('white');
-			}else{
-				$('.section_title').removeClass('white');
-			}
-		});*/
-
-
 	</script>
 </html>
