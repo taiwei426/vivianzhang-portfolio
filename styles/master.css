@@ -1526,6 +1526,14 @@ svg {
 #homepage_wrapper section#about_me p a:hover {
   color: white;
 }
+#homepage_wrapper section#about_me .website_love {
+  padding-top: 40px;
+  color: #aeb1c0;
+}
+#homepage_wrapper section#about_me .website_love i:before {
+  font-family: icon;
+  content: '\f004';
+}
 #homepage_wrapper section#about_me .connect_icons_wrapper a {
   position: relative;
   display: inline-block;
