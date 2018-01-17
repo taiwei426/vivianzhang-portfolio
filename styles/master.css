@@ -1703,6 +1703,9 @@ svg {
 #joist_quickbooks_sync #qb_sync_settings.active .sub_sections {
   height: calc((.3rem + 1.1vw) * 2);
 }
+#joist_quickbooks_sync #qb_sync_final.active .sub_sections {
+  height: calc((.3rem + 1.1vw) * 3);
+}
 #joist_quickbooks_sync #qb_sync_learnings.active .sub_sections {
   height: calc((.3rem + 1.1vw) * 2);
 }
@@ -1768,6 +1771,21 @@ svg {
   background-image: url('../project/images/joist_quickbooks_sync/11-errors-2.png');
   height: calc(320px * 1.78);
 }
+#joist_quickbooks_sync .image.final_ios {
+  width: 320px;
+  background-image: url('../project/images/joist_quickbooks_sync/12-android-final.png');
+  height: calc(320px * 1.77);
+}
+#joist_quickbooks_sync .image.final_android {
+  width: 42vw;
+  background-image: url('../project/images/joist_quickbooks_sync/12-android-final.png');
+  height: calc(42vw * 1.17);
+}
+#joist_quickbooks_sync .image.final_web {
+  width: 42vw;
+  background-image: url('../project/images/joist_quickbooks_sync/13-web-final.png');
+  height: calc(42vw * 2.34);
+}
 @media (min-width: 767px) and (max-width: 1100px) {
   #joist_quickbooks_sync .image {
     width: 52vw;
@@ -1815,6 +1833,18 @@ svg {
     width: 250px;
     height: calc(250px * 1.78);
   }
+  #joist_quickbooks_sync .image.final_ios {
+    width: 250px;
+    height: calc(250px * 1.77);
+  }
+  #joist_quickbooks_sync .image.final_android {
+    width: 52vw;
+    height: calc(52vw * 1.17);
+  }
+  #joist_quickbooks_sync .image.final_web {
+    width: 52vw;
+    height: calc(52vw * 2.34);
+  }
 }
 @media (max-width: 767px) {
   #joist_quickbooks_sync #qb_sync_intro.active .sub_sections {
@@ -1822,6 +1852,9 @@ svg {
   }
   #joist_quickbooks_sync #qb_sync_settings.active .sub_sections {
     height: calc((1rem + 4vw) * 2);
+  }
+  #joist_quickbooks_sync #qb_sync_final.active .sub_sections {
+    height: calc((1rem + 4vw) * 3);
   }
   #joist_quickbooks_sync #qb_sync_learnings.active .sub_sections {
     height: calc((1rem + 4vw) * 2);
@@ -1869,6 +1902,18 @@ svg {
   #joist_quickbooks_sync .image.errors_2 {
     width: 100%;
     height: calc((100vw - 40px) * 1.78);
+  }
+  #joist_quickbooks_sync .image.final_ios {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.77);
+  }
+  #joist_quickbooks_sync .image.final_android {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.17);
+  }
+  #joist_quickbooks_sync .image.final_web {
+    width: 100%;
+    height: calc((100vw - 40px) * 2.34);
   }
 }
 #smart_search #workflow_intro.active .sub_sections {
