@@ -1,6 +1,6 @@
 #homepage_wrapper .left_panel .page_navigation .section.active.projects .sub_sections,
 #homepage_wrapper .left_panel .page_navigation .section_second.active.projects .sub_sections {
-  height: calc((.3rem + 1.1vw) * 3);
+  height: calc((.3rem + 1.1vw) * 4);
 }
 #homepage_wrapper .left_panel .page_navigation .section.active.other .sub_sections,
 #homepage_wrapper .left_panel .page_navigation .section_second.active.other .sub_sections {
@@ -165,6 +165,9 @@
   background: white;
   background-color: #f8f9fd;
   padding: 50px 0;
+}
+#homepage_wrapper section#recent_projects .sync {
+  height: calc(42vw * .583);
 }
 #homepage_wrapper section#recent_projects .email {
   height: calc(42vw * .679);
@@ -402,6 +405,180 @@
 }
 .project_wrapper .main_panel #header #right_side .pixlee_logo {
   margin: 70px 0 5px;
+}
+#joist_quickbooks_sync #qb_sync_intro.active .sub_sections {
+  height: calc((.3rem + 1.1vw) * 3);
+}
+#joist_quickbooks_sync #qb_sync_settings.active .sub_sections {
+  height: calc((.3rem + 1.1vw) * 2);
+}
+#joist_quickbooks_sync #qb_sync_learnings.active .sub_sections {
+  height: calc((.3rem + 1.1vw) * 2);
+}
+#joist_quickbooks_sync .image {
+  width: 42vw;
+  box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+  -moz-box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+  -webkit-box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+  -o-box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+  -ms-box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+}
+#joist_quickbooks_sync .image.header_image {
+  background-image: url('../project/images/joist_quickbooks_sync/1-banner.png');
+  height: calc(42vw * .58);
+}
+#joist_quickbooks_sync .image.settings_wireframes {
+  width: 42vw;
+  background-image: url('../project/images/joist_quickbooks_sync/2-settings-wireframes.png');
+  height: calc(42vw * .87);
+}
+#joist_quickbooks_sync .image.settings_design_a {
+  width: 320px;
+  background-image: url('../project/images/joist_quickbooks_sync/3-settings-design-a.png');
+  height: calc(320px * 1.36);
+}
+#joist_quickbooks_sync .image.settings_design_b {
+  width: 320px;
+  background-image: url('../project/images/joist_quickbooks_sync/4-settings-design-b.png');
+  height: calc(320px * 1.05);
+}
+#joist_quickbooks_sync .image.settings_design_c {
+  width: 320px;
+  background-image: url('../project/images/joist_quickbooks_sync/5-settings-design-c.png');
+  height: calc(320px * 1.41);
+}
+#joist_quickbooks_sync .image.settings_design_final {
+  width: 320px;
+  background-image: url('../project/images/joist_quickbooks_sync/6-settings-final.gif');
+  height: calc(320px * .82);
+}
+#joist_quickbooks_sync .image.settings_button {
+  width: 320px;
+  background-image: url('../project/images/joist_quickbooks_sync/7-settings-button.gif');
+  height: calc(320px * .95);
+}
+#joist_quickbooks_sync .image.per_doc_wireframes {
+  width: 42vw;
+  background-image: url('../project/images/joist_quickbooks_sync/8-per-doc-wireframes.png');
+  height: calc(42vw * 1.17);
+}
+#joist_quickbooks_sync .image.per_doc_final {
+  width: 42vw;
+  background-image: url('../project/images/joist_quickbooks_sync/9-per-doc-final.png');
+  height: calc(42vw * 1.17);
+}
+#joist_quickbooks_sync .image.errors_1 {
+  width: 320px;
+  background-image: url('../project/images/joist_quickbooks_sync/10-errors-1.png');
+  height: calc(320px * 1.78);
+}
+#joist_quickbooks_sync .image.errors_2 {
+  width: 320px;
+  background-image: url('../project/images/joist_quickbooks_sync/11-errors-2.png');
+  height: calc(320px * 1.78);
+}
+@media (min-width: 767px) and (max-width: 1100px) {
+  #joist_quickbooks_sync .image {
+    width: 52vw;
+  }
+  #joist_quickbooks_sync .image.header_image {
+    height: calc(52vw * .58);
+  }
+  #joist_quickbooks_sync .image.settings_wireframes {
+    width: 52vw;
+    height: calc(52vw * .87);
+  }
+  #joist_quickbooks_sync .image.settings_design_a {
+    width: 250px;
+    height: calc(250px * 1.36);
+  }
+  #joist_quickbooks_sync .image.settings_design_b {
+    width: 250px;
+    height: calc(250px * 1.05);
+  }
+  #joist_quickbooks_sync .image.settings_design_c {
+    width: 250px;
+    height: calc(250px * 1.41);
+  }
+  #joist_quickbooks_sync .image.settings_design_final {
+    width: 250px;
+    height: calc(250px * .82);
+  }
+  #joist_quickbooks_sync .image.settings_button {
+    width: 250px;
+    height: calc(250px * .95);
+  }
+  #joist_quickbooks_sync .image.per_doc_wireframes {
+    width: 52vw;
+    height: calc(52vw * 1.17);
+  }
+  #joist_quickbooks_sync .image.per_doc_final {
+    width: 52vw;
+    height: calc(52vw * 1.17);
+  }
+  #joist_quickbooks_sync .image.errors_1 {
+    width: 250px;
+    height: calc(250px * 1.78);
+  }
+  #joist_quickbooks_sync .image.errors_2 {
+    width: 250px;
+    height: calc(250px * 1.78);
+  }
+}
+@media (max-width: 767px) {
+  #joist_quickbooks_sync #qb_sync_intro.active .sub_sections {
+    height: calc((1rem + 4vw) * 3);
+  }
+  #joist_quickbooks_sync #qb_sync_settings.active .sub_sections {
+    height: calc((1rem + 4vw) * 2);
+  }
+  #joist_quickbooks_sync #qb_sync_learnings.active .sub_sections {
+    height: calc((1rem + 4vw) * 2);
+  }
+  #joist_quickbooks_sync .image.header_image {
+    width: 100%;
+    height: calc((100vw - 40px) * .58);
+  }
+  #joist_quickbooks_sync .image.settings_wireframes {
+    width: 100%;
+    height: calc((100vw - 40px) * .87);
+  }
+  #joist_quickbooks_sync .image.settings_design_a {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.36);
+  }
+  #joist_quickbooks_sync .image.settings_design_b {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.05);
+  }
+  #joist_quickbooks_sync .image.settings_design_c {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.41);
+  }
+  #joist_quickbooks_sync .image.settings_design_final {
+    width: 100%;
+    height: calc((100vw - 40px) * .82);
+  }
+  #joist_quickbooks_sync .image.settings_button {
+    width: 100%;
+    height: calc((100vw - 40px) * .95);
+  }
+  #joist_quickbooks_sync .image.per_doc_wireframes {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.17);
+  }
+  #joist_quickbooks_sync .image.per_doc_final {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.17);
+  }
+  #joist_quickbooks_sync .image.errors_1 {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.78);
+  }
+  #joist_quickbooks_sync .image.errors_2 {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.78);
+  }
 }
 #smart_search #workflow_intro.active .sub_sections {
   height: calc((.3rem + 1.1vw) * 3);

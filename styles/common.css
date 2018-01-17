@@ -349,7 +349,7 @@ svg {
 .left_panel .pagination_wrapper li:before {
   position: absolute;
   left: 0;
-  top: calc(.05rem);
+  top: calc(.1rem);
   line-height: 14px;
   color: #667282;
 }
