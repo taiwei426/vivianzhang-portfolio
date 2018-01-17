@@ -517,6 +517,9 @@
   #joist_quickbooks_sync .image.header_image {
     height: calc(52vw * .58);
   }
+  #joist_quickbooks_sync .image.team {
+    height: calc(52vw * .195);
+  }
   #joist_quickbooks_sync .image.settings_wireframes {
     width: 52vw;
     height: calc(52vw * .87);
@@ -586,6 +589,10 @@
   #joist_quickbooks_sync .image.header_image {
     width: 100%;
     height: calc((100vw - 40px) * .58);
+  }
+  #joist_quickbooks_sync .image.team {
+    width: 100%;
+    height: calc((100vw - 40px) * .195);
   }
   #joist_quickbooks_sync .image.settings_wireframes {
     width: 100%;

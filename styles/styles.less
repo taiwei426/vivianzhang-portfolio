@@ -532,7 +532,10 @@
 			width: @width;
 			&.header_image{
 				height: calc(~'@{width} * .58');
-			}//&.header_image
+			}
+			&.team{
+				height: calc(~'@{width} * .195');
+			}
 			&.settings_wireframes{
 				width: @width;
 				height: calc(~'@{width} * .87');
@@ -621,6 +624,10 @@
 			&.header_image{
 				width: @width;
 				height: calc(~'(100vw - 40px) * .58');
+			}
+			&.team{
+				width: @width;
+				height: calc(~'(100vw - 40px) * .195');
 			}
 			&.settings_wireframes{
 				width: @width;
