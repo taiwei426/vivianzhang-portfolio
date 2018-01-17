@@ -1727,6 +1727,15 @@ svg {
   background-image: url('../project/images/joist_quickbooks_sync/1-banner.png');
   height: calc(42vw * .58);
 }
+#joist_quickbooks_sync .image.team {
+  background-image: url('../project/images/joist_quickbooks_sync/1b-team.png');
+  height: calc(42vw * .195);
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+}
 #joist_quickbooks_sync .image.settings_wireframes {
   width: 42vw;
   background-image: url('../project/images/joist_quickbooks_sync/2-settings-wireframes.png');
