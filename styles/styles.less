@@ -197,7 +197,6 @@
 			background-size: cover;
 			position: absolute;
 			background-position: center right;
-			
 			.left_panel{ 
 				backface-visibility: hidden;
 			    -webkit-backface-visibility: hidden;
@@ -304,6 +303,9 @@
 	@media(min-width: 767px) and (max-width: 1100px){
 		section#recent_projects{
 		    @width: 52vw;
+		    .sync{
+		    	height: calc(~'@{width} * .57');
+		    }
 		    .email{
 		    	height: calc(~'@{width} * .679');
 		    }
@@ -361,6 +363,9 @@
 		}//section.hello
 		section#recent_projects{
 		    @width: 100vw;
+		    .sync{
+		    	height: calc(~'(@{width} - 40px) * .583');
+		    }
 		    .email{
 		    	height: calc(~'(@{width} - 40px) * .679');
 		    }
@@ -674,7 +679,7 @@
 			}
 		}//.image
 	}//@media(max-width: 767px)
-}
+}//#joist_quickbooks_sync
 
 #smart_search{
 	#workflow_intro.active{ 

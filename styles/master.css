@@ -1598,6 +1598,9 @@ svg {
   font-size: 19px;
 }
 @media (min-width: 767px) and (max-width: 1100px) {
+  #homepage_wrapper section#recent_projects .sync {
+    height: calc(52vw * .57);
+  }
   #homepage_wrapper section#recent_projects .email {
     height: calc(52vw * .679);
   }
@@ -1647,6 +1650,9 @@ svg {
   }
   #homepage_wrapper section#hello .main_panel .vert_aligner h1 {
     font-size: 3rem;
+  }
+  #homepage_wrapper section#recent_projects .sync {
+    height: calc((100vw - 40px) * .583);
   }
   #homepage_wrapper section#recent_projects .email {
     height: calc((100vw - 40px) * .679);
