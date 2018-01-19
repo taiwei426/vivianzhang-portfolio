@@ -55,8 +55,8 @@
 						<li id="qb_sync_settings" class="section nav_drawer">
 							<a class="section_title">1) Settings Screen</a>
 							<ul class="sub_sections">
-								<li class="mobile_close">A) Sync What</li>
-								<li class="mobile_close">B) Sync When</li>
+								<li class="mobile_close">A) What to Sync</li>
+								<li class="mobile_close">B) When to Sync</li>
 							</ul>
 						</li>
 						<li class="section mobile_close">
@@ -94,14 +94,14 @@
 					</div>
 					<h3>Goal</h3>
 					<p>As we researched into new revenue streams, one opportunity we found was that a significant percentage of our contractors double entered all their documents: they created estimates and invoices within Joist then re-enter this information into QuickBooks to settle their books.</p>
-					<p>This was the new initiative that I design led: integrate with QuickBooks so that <b>estimates and invoices created within Joist could be synced automatically within QuickBooks</b>.</p>
+					<p>This became our new initiative: integrate with QuickBooks so that <b>estimates and invoices created within Joist could be synced automatically with QuickBooks</b>.</p>
 					<h3>Team</h3>
-					<div class="image_wrapper">
+					<div class="image_wrapper" style="padding-bottom: .5vw">
 						<div class="image team"></div>
 					</div>
 					<p>PM & I tag teamed to do user research.</p>
 					<h3>Timeline</h3>
-					<p>Backend started 1 month earlier. Iterative design process spanned a 2 month period. <b>Strict timeline to generate revenue by Dec 2017</b>.</p>
+					<p>Backend started 1 month earlier (Aug). Iterative design and product process spanned a 2 month period (Sept & Oct). <b>Strict timeline to generate revenue by Nov 2017</b>.</p>
 				</section>
 				<section>
 					<h2 class="section_title">Design Principles & Goals</h2>
@@ -118,7 +118,7 @@
 				<section>
 					<h2>1) Settings Screen</h2>
 					<p>The purpose of the settings page was to allow our contractors to control a) what gets synced to QuickBooks and b) when.</p>
-					<h3>A) Sync What</h3>
+					<h3>A) What to Sync</h3>
 					<p>As I was making sense of our technical constraints and user needs, I wireframed to explore how QuickBooks sync would function. Of these, I tested three with our users. Here are the design reasonings and test findings:</p>
 					<div class="image_wrapper">
 						<div class="image settings_design_a"></div>
@@ -128,12 +128,12 @@
 					<ul>
 						<li><b>Reasoning for design:</b> When we sync a Joist document into QuickBooks, we’re automatically creating not only the estimate/invoice, but also the associated client, inventory items, and payments within their QuickBooks account.</li>
 						<br>
-						<li><b>Pros</b>
+						<li><b>Pros: </b>
 							<ul>
 								<li>User could see from the design that in addition to estimates and invoices, clients, items, and payments are synced as well.</li>
 							</ul>
 						</li>
-						<li><b>Cons</b>
+						<li><b>Cons: </b>
 							<ul>
 								<li>There are many <b>backend dependencies</b>. How should these be shown in the interface? For example, user can’t turn off client or line item toggles if they want to sync estimates or invoices.</li>
 								<li>From research, we realized that when our contractors are syncing Joist estimates/invoices over to QuickBooks, <b>they expected the associated clients, items, and payments to also be created within QuickBooks</b>. This expectation meant that we could remove the toggles for clients, items, and payments, and not worry about the dependencies.</li>
@@ -153,7 +153,8 @@
 								<li>Based on this finding, the design should show that there are two ways to sync documents: <b>automatically when issued or manually selected to be synced</b>.</li>
 							</ul>
 						</li>
-						<li><b>Pros</b>: Toggle design *seemed* simple to understand...</li>
+						<li><b>Pros:</b> Toggle design *seemed* simple to understand...</li>
+						<br>
 						<li><b>Cons:</b> ...But once the user actually thought about the toggles, confusion ensued. When the toggles are on, does that mean all documents are synced or just the issued? When the toggles are off, does nothing sync? If I don’t want a document to sync when it’s issued but at a later time, do I leave the toggles on or off? Also, no one read the subtext.</li>
 					</ul>
 					<div class="image_wrapper">
@@ -166,13 +167,13 @@
 						<li><b>Pros:</b> Much clearer in what the two syncing methods are.</li>
 						<li><b>Cons:</b> A lot more text, contributing to this screen looking more complex. </li>
 					</ul>
-					<p>I combined the best of all worlds and settled on this <b>final design</b>: </p>
+					<p>I combined the best of all worlds and settled on this <b>final design:</b> </p>
 					<div class="image_wrapper">
 						<div class="image settings_design_final"></div>
 						<div class="caption">Final Design</div>
 					</div>
 					<p>With two main toggles and minimal text, the interface is simple. Toggling gives the user feedback on how syncing works. If the user is interested in selecting particular documents to sync, there’s a link to a tutorial.</p>
-					<h3>B) Sync When</h3>
+					<h3>B) When to Sync</h3>
 					<p>In our current day and age, we expect documents to sync instantaneously, like our Google docs, Dropbox, or Evernote. However, our research showed that our contractors usually don’t need to settle their books instantaneously. Generally they settle on a weekly or monthly basis. </p>
 					<p>We used this finding to our advantage. Needing this product to ship ASAP, <b>we opted to queue all of our contractors’ documents to sync at the end of the day</b> instead of having documents sync one by one as they’re ready. This minimized the amount of engineering work and ensured that we could launch in time. </p>
 					<p>But we still needed to afford our contractors control, especially if they need their documents to sync right away. A simple button was the solution. Tap this button to sync documents now.</p>
@@ -229,13 +230,14 @@
 					<h3>iOS</h3>
 					<div class="image_wrapper">
 						<div class="image final_ios">
-							<video id="final_ios" class="" width="100%" controls loop>
+							<video id="final_ios" class="" width="100%" poster="images/joist_quickbooks_sync/14-video-poster.png" controls="true" loop>
 								<source src="images/joist_quickbooks_sync/14-ios_final_compile_compressed.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 							</video>
 						</div>
 						<div class="caption">Some of the iOS flow</div>
 					</div>
+					<p>Note: the errors page is from iteration 2. We haven't developed the latest design yet.</p>
 					<h3>Android</h3>
 					<div class="image_wrapper">
 						<div class="image final_android"></div>
@@ -249,7 +251,7 @@
 				</section>
 				<section>
 					<h2>Learnings & Thoughts</h2>
-					<p>We launched Joist <> QuickBooks sync to our first cohort back in October to learn and test with a smaller subset of users. We iteratively ungated the feature so that in December 2017 we launched to all our users.</p>
+					<p>We launched Joist <> QuickBooks sync to our first cohort back in October to learn and test with a smaller subset of users. We iteratively ungated the feature so that in November 2017 we launched to all our users.</p>
 					<h3>What we did well</h3>
 					<ul>
 						<li><b>Hitting a tight timeline</b> while balancing business goals, technical constraints, and user needs.</li>

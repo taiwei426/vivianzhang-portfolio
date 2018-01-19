@@ -438,7 +438,7 @@
 }
 #joist_quickbooks_sync .image.team {
   background-image: url('../project/images/joist_quickbooks_sync/1b-team.png');
-  height: calc(42vw * .195);
+  height: calc(42vw * .2325);
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -518,7 +518,7 @@
     height: calc(52vw * .58);
   }
   #joist_quickbooks_sync .image.team {
-    height: calc(52vw * .195);
+    height: calc(52vw * .2325);
   }
   #joist_quickbooks_sync .image.settings_wireframes {
     width: 52vw;
@@ -592,7 +592,7 @@
   }
   #joist_quickbooks_sync .image.team {
     width: 100%;
-    height: calc((100vw - 40px) * .195);
+    height: calc((100vw - 40px) * .2325);
   }
   #joist_quickbooks_sync .image.settings_wireframes {
     width: 100%;
