@@ -1703,6 +1703,103 @@ svg {
 .project_wrapper .main_panel #header #right_side .pixlee_logo {
   margin: 70px 0 5px;
 }
+#joist_redesign #qb_sync_intro.active .sub_sections {
+  height: calc((.3rem + 1.1vw) * 3);
+}
+#joist_redesign #qb_sync_settings.active .sub_sections {
+  height: calc((.3rem + 1.1vw) * 2);
+}
+#joist_redesign #qb_sync_final.active .sub_sections {
+  height: calc((.3rem + 1.1vw) * 3);
+}
+#joist_redesign #qb_sync_learnings.active .sub_sections {
+  height: calc((.3rem + 1.1vw) * 2);
+}
+#joist_redesign .image {
+  width: 42vw;
+  box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+  -moz-box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+  -webkit-box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+  -o-box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+  -ms-box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
+}
+#joist_redesign .image.header_image {
+  background-image: url('../project/images/joist_redesign/1-banner.png');
+  height: calc(42vw * .575);
+}
+#joist_redesign .image.inconsistency {
+  background-image: url('../project/images/joist_redesign/2-inconsistency.png');
+  height: calc(42vw * 2.24);
+}
+#joist_redesign .image.redesigned_cell {
+  background-image: url('../project/images/joist_redesign/5-redesigned-cell.png');
+  height: calc(42vw * .2773);
+}
+#joist_redesign .image.style_guide {
+  background-image: url('../project/images/joist_redesign/6-style-guide.png');
+  height: calc(42vw * .57);
+}
+#joist_redesign .image.cell_components {
+  background-image: url('../project/images/joist_redesign/7-cell-components.png');
+  height: calc(42vw * .5475);
+}
+#joist_redesign .image.redesign {
+  background-image: url('../project/images/joist_redesign/8-redesign.png');
+  height: calc(42vw * 1.6238);
+}
+@media (min-width: 767px) and (max-width: 1100px) {
+  #joist_redesign .image {
+    width: 52vw;
+  }
+  #joist_redesign .image.header_image {
+    height: calc(52vw * .58);
+  }
+  #joist_redesign .image.team {
+    height: calc(52vw * .2325);
+  }
+  #joist_redesign .image.settings_wireframes {
+    width: 52vw;
+    height: calc(52vw * .87);
+  }
+  #joist_redesign .image.settings_design_a {
+    width: 250px;
+    height: calc(250px * 1.36);
+  }
+  #joist_redesign .image.settings_design_b {
+    width: 250px;
+    height: calc(250px * 1.05);
+  }
+}
+@media (max-width: 767px) {
+  #joist_redesign #qb_sync_intro.active .sub_sections {
+    height: calc((1rem + 4vw) * 3);
+  }
+  #joist_redesign #qb_sync_settings.active .sub_sections {
+    height: calc((1rem + 4vw) * 2);
+  }
+  #joist_redesign #qb_sync_final.active .sub_sections {
+    height: calc((1rem + 4vw) * 3);
+  }
+  #joist_redesign #qb_sync_learnings.active .sub_sections {
+    height: calc((1rem + 4vw) * 2);
+  }
+  #joist_redesign .image.header_image {
+    width: 100%;
+    height: calc((100vw - 40px) * .58);
+  }
+  #joist_redesign .image.team {
+    width: 100%;
+    height: calc((100vw - 40px) * .2325);
+  }
+  #joist_redesign .image.settings_wireframes {
+    width: 100%;
+    height: calc((100vw - 40px) * .87);
+  }
+  #joist_redesign .image.settings_design_a {
+    width: 100%;
+    height: calc((100vw - 40px) * 1.36);
+  }
+}
 #joist_quickbooks_sync #qb_sync_intro.active .sub_sections {
   height: calc((.3rem + 1.1vw) * 3);
 }

@@ -418,6 +418,126 @@
 }//.project_wrapper
 
 
+#joist_redesign{
+	#qb_sync_intro.active{ 
+		.sub_sections{   
+			height: calc(~'(.3rem + 1.1vw) * 3');
+		}
+	}
+	#qb_sync_settings.active{ 
+		.sub_sections{   
+			height: calc(~'(.3rem + 1.1vw) * 2');
+		}
+	}
+	#qb_sync_final.active{ 
+		.sub_sections{   
+			height: calc(~'(.3rem + 1.1vw) * 3');
+		}
+	}
+	#qb_sync_learnings.active{ 
+		.sub_sections{   
+			height: calc(~'(.3rem + 1.1vw) * 2');
+		} 
+	}
+	@width: 42vw;
+	.image{
+		width: @width;
+		.boxshadow(0 0 20px 0 rgba(61,53,96, 0.08));
+		&.header_image{
+			background-image: url('../project/images/joist_redesign/1-banner.png');
+			height: calc(~'@{width} * .575');
+		}//&.header_image
+		&.inconsistency{
+			background-image: url('../project/images/joist_redesign/2-inconsistency.png');
+			height: calc(~'@{width} * 2.24');
+		}
+		&.redesigned_cell{
+			background-image: url('../project/images/joist_redesign/5-redesigned-cell.png');
+			height: calc(~'@{width} * .2773');
+		}
+		&.style_guide{
+			background-image: url('../project/images/joist_redesign/6-style-guide.png');
+			height: calc(~'@{width} * .57');
+		}
+		&.cell_components{
+			background-image: url('../project/images/joist_redesign/7-cell-components.png');
+			height: calc(~'@{width} * .5475');
+		}
+		&.redesign{
+			background-image: url('../project/images/joist_redesign/8-redesign.png');
+			height: calc(~'@{width} * 1.6238');
+		}
+	}//.image
+	@media(min-width: 767px) and (max-width: 1100px){
+		@width: 52vw;
+		.image{
+			width: @width;
+			&.header_image{
+				height: calc(~'@{width} * .58');
+			}
+			&.team{
+				height: calc(~'@{width} * .2325');
+			}
+			&.settings_wireframes{
+				width: @width;
+				height: calc(~'@{width} * .87');
+			}
+			&.settings_design_a{
+				@width: 250px;
+				width: @width;
+				height: calc(~'@{width} * 1.36');
+			}
+			&.settings_design_b{
+				@width: 250px;
+				width: @width;
+				height: calc(~'@{width} * 1.05');
+			}
+		}//.image
+	}//@media(max-width: 1100px)
+	@media(max-width: 767px){
+		#qb_sync_intro.active{ 
+			.sub_sections{   
+				height: calc(~'(1rem + 4vw) * 3');
+			}
+		}
+		#qb_sync_settings.active{ 
+			.sub_sections{   
+				height: calc(~'(1rem + 4vw) * 2');
+			}
+		}
+		#qb_sync_final.active{ 
+			.sub_sections{   
+				height: calc(~'(1rem + 4vw) * 3');
+			}
+		}
+		#qb_sync_learnings.active{ 
+			.sub_sections{   
+				height: calc(~'(1rem + 4vw) * 2');
+			}
+		}
+		.image{
+			@width: 100%;
+			&.header_image{
+				width: @width;
+				height: calc(~'(100vw - 40px) * .58');
+			}
+			&.team{
+				width: @width;
+				height: calc(~'(100vw - 40px) * .2325');
+			}
+			&.settings_wireframes{
+				width: @width;
+				height: calc(~'(100vw - 40px) * .87');
+			}
+			&.settings_design_a{
+				@width: 100%;
+				width: @width;
+				height: calc(~'(100vw - 40px) * 1.36');
+			}
+		}//.image
+	}//@media(max-width: 767px)
+}//#joist_redesign
+
 #joist_quickbooks_sync{
 	#qb_sync_intro.active{ 
 		.sub_sections{   
