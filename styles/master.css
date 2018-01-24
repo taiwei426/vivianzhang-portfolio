@@ -1457,8 +1457,11 @@ svg {
   background-color: #f8f9fd;
   padding: 50px 0;
 }
+#homepage_wrapper section#recent_projects .redesign {
+  height: calc(42vw * .5841);
+}
 #homepage_wrapper section#recent_projects .sync {
-  height: calc(42vw * .583);
+  height: calc(42vw * .580);
 }
 #homepage_wrapper section#recent_projects .email {
   height: calc(42vw * .679);
