@@ -12,7 +12,7 @@
 			.section_second{
 				&.active.projects{
 					.sub_sections{
-						height: calc(~'(.3rem + 1.1vw) * 4');
+						height: calc(~'(.3rem + 1.1vw) * 5');
 					}//.sub_sections
 				}//&.active.projects
 				&.active.other{  
@@ -167,10 +167,10 @@
 		padding: 50px 0;
 	    @width: 42vw;
 	    .redesign{
-	    	height: calc(~'@{width} * .5841');
+	    	height: calc(~'@{width} * .5842');
 	    }
 	    .sync{
-	    	height: calc(~'@{width} * .580');
+	    	height: calc(~'@{width} * .5809');
 	    }
 	    .email{
 	    	height: calc(~'@{width} * .679');
@@ -422,53 +422,47 @@
 
 
 #joist_redesign{
-	#qb_sync_intro.active{ 
+	#redesign_reasons.active{ 
 		.sub_sections{   
 			height: calc(~'(.3rem + 1.1vw) * 3');
 		}
 	}
-	#qb_sync_settings.active{ 
-		.sub_sections{   
-			height: calc(~'(.3rem + 1.1vw) * 2');
-		}
-	}
-	#qb_sync_final.active{ 
+	#redesign_principles.active{ 
 		.sub_sections{   
 			height: calc(~'(.3rem + 1.1vw) * 3');
 		}
-	}
-	#qb_sync_learnings.active{ 
-		.sub_sections{   
-			height: calc(~'(.3rem + 1.1vw) * 2');
-		} 
 	}
 	@width: 42vw;
 	.image{
 		width: @width;
 		.boxshadow(0 0 20px 0 rgba(61,53,96, 0.08));
 		&.header_image{
-			background-image: url('../project/images/joist_redesign/1-banner.png');
+			background-image: url('../project/images/joist_redesign/1-banner-min.png');
 			height: calc(~'@{width} * .575');
 		}//&.header_image
 		&.inconsistency{
-			background-image: url('../project/images/joist_redesign/2-inconsistency.png');
+			background-image: url('../project/images/joist_redesign/2-inconsistency-min.png');
 			height: calc(~'@{width} * 2.24');
 		}
+		&.pervasive_cell{
+			background-image: url('../project/images/joist_redesign/3-pervasive-cell-min.png');
+			height: calc(~'@{width} * .5633');
+		}
 		&.redesigned_cell{
-			background-image: url('../project/images/joist_redesign/5-redesigned-cell.png');
+			background-image: url('../project/images/joist_redesign/5-redesigned-cell-min.png');
 			height: calc(~'@{width} * .2773');
 		}
 		&.style_guide{
-			background-image: url('../project/images/joist_redesign/6-style-guide.png');
-			height: calc(~'@{width} * .57');
+			background-image: url('../project/images/joist_redesign/6-style-guide-min.png');
+			height: calc(~'@{width} * .5958');
 		}
 		&.cell_components{
-			background-image: url('../project/images/joist_redesign/7-cell-components.png');
-			height: calc(~'@{width} * .5475');
+			background-image: url('../project/images/joist_redesign/7-cell-components-min.png');
+			height: calc(~'@{width} * .6025');
 		}
 		&.redesign{
-			background-image: url('../project/images/joist_redesign/8-redesign.png');
-			height: calc(~'@{width} * 1.6238');
+			background-image: url('../project/images/joist_redesign/8-redesign-min.png');
+			height: calc(~'@{width} * 2.142');
 		}
 	}//.image
 	@media(min-width: 767px) and (max-width: 1100px){
@@ -476,24 +470,25 @@
 		.image{
 			width: @width;
 			&.header_image{
-				height: calc(~'@{width} * .58');
+				height: calc(~'@{width} * .575');
+			}//&.header_image
+			&.inconsistency{
+				height: calc(~'@{width} * 2.24');
 			}
-			&.team{
-				height: calc(~'@{width} * .2325');
+			&.pervasive_cell{
+				height: calc(~'@{width} * .5633');
 			}
-			&.settings_wireframes{
-				width: @width;
-				height: calc(~'@{width} * .87');
+			&.redesigned_cell{
+				height: calc(~'@{width} * .2773');
 			}
-			&.settings_design_a{
-				@width: 250px;
-				width: @width;
-				height: calc(~'@{width} * 1.36');
+			&.style_guide{
+				height: calc(~'@{width} * .5958');
 			}
-			&.settings_design_b{
-				@width: 250px;
-				width: @width;
-				height: calc(~'@{width} * 1.05');
+			&.cell_components{
+				height: calc(~'@{width} * .6025');
+			}
+			&.redesign{
+				height: calc(~'@{width} * 2.142');
 			}
 		}//.image
 	}//@media(max-width: 1100px)
@@ -520,22 +515,27 @@
 		}
 		.image{
 			@width: 100%;
+			width: @width;
 			&.header_image{
-				width: @width;
-				height: calc(~'(100vw - 40px) * .58');
+				height: calc(~'(100vw - 40px) * .575');
+			}//&.header_image
+			&.inconsistency{
+				height: calc(~'(100vw - 40px) * 2.24');
 			}
-			&.team{
-				width: @width;
-				height: calc(~'(100vw - 40px) * .2325');
+			&.pervasive_cell{
+				height: calc(~'(100vw - 40px) * .5633');
 			}
-			&.settings_wireframes{
-				width: @width;
-				height: calc(~'(100vw - 40px) * .87');
+			&.redesigned_cell{
+				height: calc(~'(100vw - 40px) * .2773');
 			}
-			&.settings_design_a{
-				@width: 100%;
-				width: @width;
-				height: calc(~'(100vw - 40px) * 1.36');
+			&.style_guide{
+				height: calc(~'(100vw - 40px) * .5958');
+			}
+			&.cell_components{
+				height: calc(~'(100vw - 40px) * .6025');
+			}
+			&.redesign{
+				height: calc(~'(100vw - 40px) * 2.142');
 			}
 		}//.image
 	}//@media(max-width: 767px)

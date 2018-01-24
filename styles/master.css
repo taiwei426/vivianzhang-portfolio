@@ -1291,7 +1291,7 @@ svg {
 }
 #homepage_wrapper .left_panel .page_navigation .section.active.projects .sub_sections,
 #homepage_wrapper .left_panel .page_navigation .section_second.active.projects .sub_sections {
-  height: calc((.3rem + 1.1vw) * 4);
+  height: calc((.3rem + 1.1vw) * 5);
 }
 #homepage_wrapper .left_panel .page_navigation .section.active.other .sub_sections,
 #homepage_wrapper .left_panel .page_navigation .section_second.active.other .sub_sections {
@@ -1458,10 +1458,10 @@ svg {
   padding: 50px 0;
 }
 #homepage_wrapper section#recent_projects .redesign {
-  height: calc(42vw * .5841);
+  height: calc(42vw * .5842);
 }
 #homepage_wrapper section#recent_projects .sync {
-  height: calc(42vw * .580);
+  height: calc(42vw * .5809);
 }
 #homepage_wrapper section#recent_projects .email {
   height: calc(42vw * .679);
@@ -1706,17 +1706,11 @@ svg {
 .project_wrapper .main_panel #header #right_side .pixlee_logo {
   margin: 70px 0 5px;
 }
-#joist_redesign #qb_sync_intro.active .sub_sections {
+#joist_redesign #redesign_reasons.active .sub_sections {
   height: calc((.3rem + 1.1vw) * 3);
 }
-#joist_redesign #qb_sync_settings.active .sub_sections {
-  height: calc((.3rem + 1.1vw) * 2);
-}
-#joist_redesign #qb_sync_final.active .sub_sections {
+#joist_redesign #redesign_principles.active .sub_sections {
   height: calc((.3rem + 1.1vw) * 3);
-}
-#joist_redesign #qb_sync_learnings.active .sub_sections {
-  height: calc((.3rem + 1.1vw) * 2);
 }
 #joist_redesign .image {
   width: 42vw;
@@ -1727,50 +1721,57 @@ svg {
   -ms-box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
 }
 #joist_redesign .image.header_image {
-  background-image: url('../project/images/joist_redesign/1-banner.png');
+  background-image: url('../project/images/joist_redesign/1-banner-min.png');
   height: calc(42vw * .575);
 }
 #joist_redesign .image.inconsistency {
-  background-image: url('../project/images/joist_redesign/2-inconsistency.png');
+  background-image: url('../project/images/joist_redesign/2-inconsistency-min.png');
   height: calc(42vw * 2.24);
 }
+#joist_redesign .image.pervasive_cell {
+  background-image: url('../project/images/joist_redesign/3-pervasive-cell-min.png');
+  height: calc(42vw * .5633);
+}
 #joist_redesign .image.redesigned_cell {
-  background-image: url('../project/images/joist_redesign/5-redesigned-cell.png');
+  background-image: url('../project/images/joist_redesign/5-redesigned-cell-min.png');
   height: calc(42vw * .2773);
 }
 #joist_redesign .image.style_guide {
-  background-image: url('../project/images/joist_redesign/6-style-guide.png');
-  height: calc(42vw * .57);
+  background-image: url('../project/images/joist_redesign/6-style-guide-min.png');
+  height: calc(42vw * .5958);
 }
 #joist_redesign .image.cell_components {
-  background-image: url('../project/images/joist_redesign/7-cell-components.png');
-  height: calc(42vw * .5475);
+  background-image: url('../project/images/joist_redesign/7-cell-components-min.png');
+  height: calc(42vw * .6025);
 }
 #joist_redesign .image.redesign {
-  background-image: url('../project/images/joist_redesign/8-redesign.png');
-  height: calc(42vw * 1.6238);
+  background-image: url('../project/images/joist_redesign/8-redesign-min.png');
+  height: calc(42vw * 2.142);
 }
 @media (min-width: 767px) and (max-width: 1100px) {
   #joist_redesign .image {
     width: 52vw;
   }
   #joist_redesign .image.header_image {
-    height: calc(52vw * .58);
+    height: calc(52vw * .575);
   }
-  #joist_redesign .image.team {
-    height: calc(52vw * .2325);
+  #joist_redesign .image.inconsistency {
+    height: calc(52vw * 2.24);
   }
-  #joist_redesign .image.settings_wireframes {
-    width: 52vw;
-    height: calc(52vw * .87);
+  #joist_redesign .image.pervasive_cell {
+    height: calc(52vw * .5633);
   }
-  #joist_redesign .image.settings_design_a {
-    width: 250px;
-    height: calc(250px * 1.36);
+  #joist_redesign .image.redesigned_cell {
+    height: calc(52vw * .2773);
   }
-  #joist_redesign .image.settings_design_b {
-    width: 250px;
-    height: calc(250px * 1.05);
+  #joist_redesign .image.style_guide {
+    height: calc(52vw * .5958);
+  }
+  #joist_redesign .image.cell_components {
+    height: calc(52vw * .6025);
+  }
+  #joist_redesign .image.redesign {
+    height: calc(52vw * 2.142);
   }
 }
 @media (max-width: 767px) {
@@ -1786,21 +1787,29 @@ svg {
   #joist_redesign #qb_sync_learnings.active .sub_sections {
     height: calc((1rem + 4vw) * 2);
   }
+  #joist_redesign .image {
+    width: 100%;
+  }
   #joist_redesign .image.header_image {
-    width: 100%;
-    height: calc((100vw - 40px) * .58);
+    height: calc((100vw - 40px) * .575);
   }
-  #joist_redesign .image.team {
-    width: 100%;
-    height: calc((100vw - 40px) * .2325);
+  #joist_redesign .image.inconsistency {
+    height: calc((100vw - 40px) * 2.24);
   }
-  #joist_redesign .image.settings_wireframes {
-    width: 100%;
-    height: calc((100vw - 40px) * .87);
+  #joist_redesign .image.pervasive_cell {
+    height: calc((100vw - 40px) * .5633);
   }
-  #joist_redesign .image.settings_design_a {
-    width: 100%;
-    height: calc((100vw - 40px) * 1.36);
+  #joist_redesign .image.redesigned_cell {
+    height: calc((100vw - 40px) * .2773);
+  }
+  #joist_redesign .image.style_guide {
+    height: calc((100vw - 40px) * .5958);
+  }
+  #joist_redesign .image.cell_components {
+    height: calc((100vw - 40px) * .6025);
+  }
+  #joist_redesign .image.redesign {
+    height: calc((100vw - 40px) * 2.142);
   }
 }
 #joist_quickbooks_sync #qb_sync_intro.active .sub_sections {
