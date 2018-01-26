@@ -37,8 +37,8 @@
 				<div class="navigation_wrapper">
 					<ul class="pagination_wrapper">
 						<li id="all_projects"><a href="../index.html#recent_projects" >All Projects</a></li>
-						<li id="previous_project"><a href="../project/joist-redesign.html">Previous</a></li>
-						<li id="next_project"><a href="../project/interactive-social-emails.html">Next</a></li>
+						<li id="previous_project"><a href="../project/influencer-relationship-manager.html">Previous</a></li>
+						<li id="next_project"><a href="../project/joist-redesign.html">Next</a></li>
 					</ul>
 					<ul class="page_navigation">
 						<li id="qb_sync_intro" class="section nav_drawer">
@@ -87,21 +87,21 @@
 			<div id="main_panel" class="main_panel">
 				<section>
 					<h2 class="section_title">Joist <> Quickbooks Sync</h2>
-					<p>Joist is a cross-platform app that enables trade contractors (eg: roofers, landscapers, anyone who works on your home) to estimate, invoice, and request payments. We’re one of the most beloved apps for trade contractors, continuously ranked highly in app stores for our simplicity.</p>
+					<p>Joist is a cross-platform app that enables trade contractors (eg: roofers, landscapers, anyone who works on your home) to estimate, invoice, and request payments. We’re one of trade contractors' most beloved apps, with other 100,000 reviews on the <a href="https://itunes.apple.com/us/app/joist-app-for-contractors/id592163563?mt=8" class="app_store_links">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.joistapp.android.joist&hl=en" class="app_store_links"> Android</a> app stores.</p></p>
 					<div class="image_wrapper">
 						<div class="image header_image"></div>
 						<div class="caption">Our app's main functionality is creating estimates and invoices</div>
 					</div>
 					<h3>Goal</h3>
 					<p>As we researched into new revenue streams, one opportunity we found was that a significant percentage of our contractors double entered all their documents: they created estimates and invoices within Joist then re-enter this information into QuickBooks to settle their books.</p>
-					<p>This became our new initiative: integrate with QuickBooks so that <b>estimates and invoices created within Joist could be synced automatically with QuickBooks</b>.</p>
+					<p>This became our new initiative: integrate with QuickBooks so that <b>estimates and invoices created with Joist automatically syncs to QuickBooks</b>.</p>
 					<h3>Team</h3>
 					<div class="image_wrapper" style="padding-bottom: .5vw">
 						<div class="image team"></div>
 					</div>
 					<p>PM & I tag teamed to do user research.</p>
 					<h3>Timeline</h3>
-					<p>Backend started 1 month earlier (Aug). Iterative design and product process spanned a 2 month period (Sept & Oct). <b>Strict timeline to generate revenue by Nov 2017</b>.</p>
+					<p>Backend started 1 month earlier. Iterative design and product process spanned a 2 month period. <b>Strict timeline to generate revenue by Nov 2017</b>.</p>
 				</section>
 				<section>
 					<h2 class="section_title">Design Principles & Goals</h2>
@@ -112,31 +112,29 @@
 						<li><b>Automate syncing when possible.</b> Our contractors don’t have much time.</li>
 						<li><b>Give users control over what gets synced and when.</b> Our contractors need control over their business.</li>
 					</ul>
-					<!-- <p>Additionally, we needed to launch this feature within 2 months to generate revenue ASAP. Design needed to work towards this business goal and within technical limitations. </p> -->
-					<p>This was a rather complex feature that touched many parts of the application, but for this case study, I’ll review 3 main screens: the settings, document, and error screens.</p>
+					<p>This was a rather complex integration that touched many parts of the application, but for this case study, I’ll review the design decisions for 3 main screens: the settings, document, and error screens.</p>
 				</section>
 				<section>
 					<h2>1) Settings Screen</h2>
-					<p>The purpose of the settings page was to allow our contractors to control a) what gets synced to QuickBooks and b) when.</p>
+					<p>The purpose of the settings page is to allow our contractors to control a) what gets synced to QuickBooks and b) when.</p>
 					<h3>A) What to Sync</h3>
-					<p>As I was making sense of our technical constraints and user needs, I wireframed to explore how QuickBooks sync would function. Of these, I tested three with our users. Here are the design reasonings and test findings:</p>
+					<p>As I was making sense of our technical constraints and user needs, I wireframed to explore how QuickBooks sync would function. From the many, there were 3 main contenders. Here are the design reasonings and test findings:</p>
 					<div class="image_wrapper">
 						<div class="image settings_design_a"></div>
 						<div class="caption">Design A</div>
 					</div>
 					<h4>Design A</h4>
 					<ul>
-						<li><b>Reasoning for design:</b> When we sync a Joist document into QuickBooks, we’re automatically creating not only the estimate/invoice, but also the associated client, inventory items, and payments within their QuickBooks account.</li>
+						<li><b>Reasoning for design:</b> When a Joist document syncs to QuickBooks, we’re automatically creating not only the estimate/invoice, but also the associated client, inventory items, and payments within their QuickBooks account.</li>
 						<br>
 						<li><b>Pros: </b>
 							<ul>
-								<li>User could see from the design that in addition to estimates and invoices, clients, items, and payments are synced as well.</li>
+								<li>From the design, user can see that in addition to estimates and invoices, clients, items, and payments are synced as well.</li>
 							</ul>
 						</li>
 						<li><b>Cons: </b>
 							<ul>
-								<li>There are many <b>backend dependencies</b>. How should these be shown in the interface? For example, user can’t turn off client or line item toggles if they want to sync estimates or invoices.</li>
-								<li>From research, we realized that when our contractors are syncing Joist estimates/invoices over to QuickBooks, <b>they expected the associated clients, items, and payments to also be created within QuickBooks</b>. This expectation meant that we could remove the toggles for clients, items, and payments, and not worry about the dependencies.</li>
+								<li>From talking to users, we realized that when our contractors are syncing Joist estimates/invoices over to QuickBooks, <b>they expected the associated clients, items, and payments to also be created within QuickBooks</b>. This expectation meant that we could remove clients, items, and payments from this screen altogether.</li>
 							</ul>
 						</li>
 					</ul>
@@ -149,13 +147,13 @@
 						<li><b>Reasoning for design:</b> We have two subsets of users.
 							<ul>
 								<li>One group preferred a more <b>“set it and forget it” approach</b>, where all estimates/invoices that are issued (emailed or printed) are automatically synced to QuickBooks. These users issued documents when they’re final to give to their clients.</li>
-								<li>Another group of users issued documents in the draft stage to give to their clients or their internal team members to review as the project is still proceeding. For these users, <b>they wanted more control over what stage a document gets synced</b>.</li>
-								<li>Based on this finding, the design should show that there are two ways to sync documents: <b>automatically when issued or manually selected to be synced</b>.</li>
+								<li>Another group of users issued documents in the draft stage to share with their clients or their internal team members as the project is still proceeding. For these users, <b>they wanted more control over what stage a document gets synced</b>.</li>
+								<li>Based on this finding, the design should show that there are two ways to sync documents: <b>automatically sync when issued or sync when user manually selects it</b>.</li>
 							</ul>
 						</li>
-						<li><b>Pros:</b> Toggle design *seemed* simple to understand...</li>
+						<li><b>Pros:</b> Toggle design *seems* simple to understand...</li>
 						<br>
-						<li><b>Cons:</b> ...But once the user actually thought about the toggles, confusion ensued. When the toggles are on, does that mean all documents are synced or just the issued? When the toggles are off, does nothing sync? If I don’t want a document to sync when it’s issued but at a later time, do I leave the toggles on or off? Also, no one read the subtext.</li>
+						<li><b>Cons:</b> ...But once the user actually thinks about the toggles, confusion ensued. When the toggles are on, does that mean all documents are synced or just the issued? When the toggles are off, does nothing sync? If I don’t want a document to sync when it’s issued but at a later time, do I leave the toggles on or off? </li>
 					</ul>
 					<div class="image_wrapper">
 						<div class="image settings_design_c"></div>
@@ -165,18 +163,18 @@
 					<ul>
 						<li><b>Reasoning for design:</b> Literally spell out the two ways a document can be synced.</li>
 						<li><b>Pros:</b> Much clearer in what the two syncing methods are.</li>
-						<li><b>Cons:</b> A lot more text, contributing to this screen looking more complex. </li>
+						<li><b>Cons:</b> A lot more text. User feels obligated to read through everything to set up. </li>
 					</ul>
 					<p>I combined the best of all worlds and settled on this <b>final design:</b> </p>
 					<div class="image_wrapper">
 						<div class="image settings_design_final"></div>
 						<div class="caption">Final Design</div>
 					</div>
-					<p>With two main toggles and minimal text, the interface is simple. Toggling gives the user feedback on how syncing works. If the user is interested in selecting particular documents to sync, there’s a link to a tutorial.</p>
+					<p>With two main toggles and minimal text, the interface is simple for the primary use case of syncing a document when it is issued. If that's not the user's usecase, they'll toggle and see an alternative method that is more clearly spelled out. There's also a tutorial link if the user wants to learn more.</p>
 					<h3>B) When to Sync</h3>
-					<p>In our current day and age, we expect documents to sync instantaneously, like our Google docs, Dropbox, or Evernote. However, our research showed that our contractors usually don’t need to settle their books instantaneously. Generally they settle on a weekly or monthly basis. </p>
-					<p>We used this finding to our advantage. Needing this product to ship ASAP, <b>we opted to queue all of our contractors’ documents to sync at the end of the day</b> instead of having documents sync one by one as they’re ready. This minimized the amount of engineering work and ensured that we could launch in time. </p>
-					<p>But we still needed to afford our contractors control, especially if they need their documents to sync right away. A simple button was the solution. Tap this button to sync documents now.</p>
+					<p>In our current day and age, we expect documents to sync instantaneously, like our Google docs, Dropbox, or Evernote. However, while talking to our contractors, we learned that they usually don’t need to settle their books instantaneously. Generally they settle on a weekly or monthly basis. </p>
+					<p>We used this finding to our advantage. Needing this product to ship ASAP, <b>we opted to queue all of our contractors’ documents to sync at the end of the day</b> instead of having documents sync one by one as they became ready. This minimized the amount of engineering work and ensured that we could launch in time. </p>
+					<p>But we still needed to afford our contractors control for when they couldn't wait and needed their documents to sync right away. A simple button was the solution. Tap this button to sync documents now.</p>
 					<div class="image_wrapper">
 						<div class="image settings_button"></div>
 						<div class="caption">Sync documents immediately by tapping button</div>
@@ -185,9 +183,9 @@
 				<section>
 					<h2 class="section_title">2) Document Screen</h2>
 					<p>As mentioned previously, one group of users preferred to not have documents sync when they’re issued. Instead they wanted more control.</p>
-					<p>Additionally, the design needed to communicate that documents can only be synced once, so sync only when the document is final. We had limited the number of times a document could be synced so that we could deploy faster in order to meet our business goal.</p>
-					<p>The tutorial link within the settings screen mentioned that documents can be synced only once, but this information should also be provided when user is selecting a document to be synced.</p>
-					<p>Below are some initial exploratory wireframes. The goal was <b>to allow users to select a document to sync as well as to let them know documents can only be synced once.</b> </p>
+					<p>Additionally, the design needs to communicate that documents can only be synced once, so sync only when the document is final. We had limited the number of times a document can be synced so that we could deploy faster in order to meet our internal deadline.</p>
+					<p>The tutorial link on the settings screen explains that documents can be synced only once, but this information should also be readily presented when a user is selecting a document to sync.</p>
+					<p>Below are some initial wireframes, <b>exploring how a users selects a document to sync as well as how to communicate to a user that documents can only be synced once.</b> </p>
 					<div class="image_wrapper">
 						<div class="image per_doc_wireframes"></div>
 						<div class="caption">Exploration of syncing individual documents</div>
@@ -200,26 +198,26 @@
 					<p>Design decisions and reasoning:</p>
 					<ul>
 						<li>Tooltip shows where the button is. </li>
-						<li>Button on the PDF might cause unnecessary confusion. Some of our contractors will think the button literally exists on the PDF and that their clients will also see the button on a sent document.</li>
+						<li>Button on the PDF might cause unnecessary confusion. Some of our contractors might think the button literally exists on the PDF and that their clients will also see the button on a sent document.</li>
 						<li>Show the “can only sync once” message when relevant. One potential best time to show the message is when user has tapped the button and is trying to sync the document. </li>
 						<li>When the message is important and showing it once may not be memorable enough, let the user control how many times they want to be reminded.</li>
-						<li>Adult learners are more hesitant to tap around on their phones (which is how younger users generally learn what actions are available to them). Instead, adult learners need to be explicitly taught what actions are available: tap the same button to remove document from sync queue. Otherwise, our users would not have found this action. </li>
+						<li>Adult learners are more hesitant to tap around on their phones (which is how younger users generally learn what actions are available to them). We decided to explicitly teach our adult learners to tap the same button to remove document from sync queue. Otherwise, they may never find this action. </li>
 					</ul>
 				</section>
 				<section>
 					<h2>3) Errors Screen</h2>
-					<p>When integrating with another platform, we knew errors were inevitable. Even if our backend was perfectly implemented, if data sets between our contractors’ Joist and QuickBooks accounts don’t match, then errors will arise.</p>
-					<p><b>Without a way to see how our contractors’ QuickBooks accounts are setup, we took a very iterative approach to design for these errors.</b></p>
-					<p>Our <b>first release</b> of QuickBooks sync was only to a handful of users. The goal of this release was to learn what types of errors that could arise and prioritize these errors.</p>
+					<p>When integrating with another platform, we knew errors were inevitable. Even if our backend were perfectly implemented, if data sets between our contractors’ Joist and QuickBooks accounts didn't match, then errors will arise.</p>
+					<p><b>Without a way to see how our contractors’ QuickBooks accounts were set up, we took a very iterative approach to design for these errors.</b></p>
+					<p>Our <b>first release</b> of QuickBooks sync was only to a handful of users. The goal of this release was to learn what types of errors could arise and prioritize these errors.</p>
 					<p>For a quick <b>second release</b>, we humanized the error messages. We also realized that tax names were causing a vast majority of sync errors, so backend tried to do more of the leg work of matching taxes between contractors’ Joist and QuickBooks accounts. I also designed a quick tutorial page for our users to manually update their tax information if our backend couldn’t automatically match them.</p>
 					<p>This <b>iterative approach prevented us from wasting resources</b> building solutions that wouldn’t have ultimately solved the problem.</p>
-					<p>For example, before our first initial release, I thought that when users have sync errors, they would have few errors but of different types, so my first wireframes were optimized for that:</p>
+					<p>For example, before our first initial release, I guessed that when users have sync errors, they would have few errors but of different types, so my first wireframes were optimized for that:</p>
 					<div class="image_wrapper">
 						<div class="image errors_1"></div>
 						<div class="caption">Initial design for sync errors</div>
 					</div>
-					<p>After the initial launch and we could actually see the types of errors, we realized that if a document were to have a sync error, it's normally caused by 1 errors, not mulitple. This meant that there's no point in grouping errors by documents since each document would only have 1 error.</p>
-					<p>Also, we noticed that it's usually one type of error that’s causing many sync failures. For example, an unfound tax could cause all documents to not sync. Or some documents may not sync because there's one inventory item where the name is too long. So then my design was optimized to fix one error that’s causing multiple sync failures:</p>
+					<p>After the initial launch and we saw the error types, we realized that if a document were to have a sync error, it was normally caused by one error, not mulitple. This meant that there was no point in grouping errors by documents since each document would only have 1 error.</p>
+					<p>Also, we noticed that usually one type of error caused many of the sync failures. For example, an unfound tax could cause all documents to not sync. Or some documents may not sync because one item's name was too long. So then my design was optimized to fix one error that’s causing multiple sync failures:</p>
 					<div class="image_wrapper">
 						<div class="image errors_2"></div>
 						<div class="caption">Better design for sync errors</div>
@@ -251,25 +249,25 @@
 				</section>
 				<section>
 					<h2>Learnings & Thoughts</h2>
-					<p>We launched Joist <> QuickBooks sync to our first cohort back in October to learn and test with a smaller subset of users. We iteratively ungated the feature so that in November 2017 we launched to all our users.</p>
+					<p>We launched Joist <> QuickBooks sync to our first cohort back in October to learn and test with a smaller subset of users. We iteratively ungated the feature and launched to all our users in November 2017.</p>
 					<h3>What we did well</h3>
 					<ul>
 						<li><b>Hitting a tight timeline</b> while balancing business goals, technical constraints, and user needs.</li>
-						<li><b>Understanding users’ mental models</b> through user interviews and testing. Helped us strip down the settings page to its main components. </li>
+						<li><b>Understanding users’ mental models</b> through user interviews and testing. </li>
 						<li><b>Iterative approach</b> to understanding problem space. Prevented us from wasting valuable resources on building out errors page.</li>
 						<li><b>Simple design</b> despite a very technical integration. The simpler the design, the easier the QuickBooks sync process feels despite that much is happening in the background. </li>
 					</ul>
 					<h3>What could be improved</h3>
 					<ul>
-						<li>More exposure of the feature within the app would’ve inched us closer to our revenue goals. During the initial research, we estimated that ~30% of our users would purchase QuickBooks sync. Right now we’re falling behind that at ~10%.</li>
-						<li>Everything designed here was functional, and there’s not much delight to the experience. Given more time or in another iteration, I think we could make this experience a lot more welcoming and exciting, especially given that this is a paid premium feature. </li>
+						<li>More exposure of the feature within the app would’ve inched us closer to our revenue goals. During the initial research, we estimated that ~30% of our users would purchase QuickBooks sync. Right now we’re behind at ~10%.</li>
+						<li>Everything designed here is functional, and there’s not much delight to the experience. Given more time or in another iteration, I think we could make this experience a lot more welcoming and exciting, especially given that this is a paid premium feature. </li>
 					</ul>
 				</section>
 				
 				<div id="mobile_bottom_nav">
-					<a id="previous_project" href="../project/joist-redesign.html">Previous</a>
+					<a id="previous_project" href="../project/influencer-relationship-manager.html">Previous</a>
 					<a id="all_projects" href="../index.html#recent_projects" >All Projects</a>
-					<a id="next_project" href="../project/interactive-social-emails.html" >Next</a>
+					<a id="next_project" href="../project/joist-redesign.html" >Next</a>
 				</div>
 				
 			</div>

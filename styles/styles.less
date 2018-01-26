@@ -167,10 +167,10 @@
 		padding: 50px 0;
 	    @width: 42vw;
 	    .redesign{
-	    	height: calc(~'@{width} * .5842');
+	    	height: calc(~'@{width} * .5841');
 	    }
 	    .sync{
-	    	height: calc(~'@{width} * .5809');
+	    	height: calc(~'@{width} * .5808');
 	    }
 	    .email{
 	    	height: calc(~'@{width} * .679');
@@ -306,6 +306,9 @@
 	@media(min-width: 767px) and (max-width: 1100px){
 		section#recent_projects{
 		    @width: 52vw;
+		    .redesign{
+		    	height: calc(~'@{width} * .5842');
+		    }
 		    .sync{
 		    	height: calc(~'@{width} * .57');
 		    }
@@ -345,7 +348,7 @@
 		}//.view_project
 		.left_panel .page_navigation .section.active{
 			&#projects .sub_sections{
-		 		height: calc(~'(1rem + 4vw) * 3 + 5px');
+		 		height: calc(~'(1rem + 4vw) * 5 + 5px');
 		 	}
 		 	&#other .sub_sections{
 		 		height: calc(~'(1rem + 4vw) * 3 + 5px');
@@ -366,6 +369,9 @@
 		}//section.hello
 		section#recent_projects{
 		    @width: 100vw;
+		    .redesign{
+		    	height: calc(~'(@{width} - 40px) * .5842');
+		    }
 		    .sync{
 		    	height: calc(~'(@{width} - 40px) * .583');
 		    }
@@ -432,6 +438,9 @@
 			height: calc(~'(.3rem + 1.1vw) * 3');
 		}
 	}
+	.app_store_links{
+		text-decoration: underline
+	}
 	@width: 42vw;
 	.image{
 		width: @width;
@@ -458,11 +467,17 @@
 		}
 		&.cell_components{
 			background-image: url('../project/images/joist_redesign/7-cell-components-min.png');
-			height: calc(~'@{width} * .6025');
+			height: calc(~'@{width} * .7333');
 		}
 		&.redesign{
 			background-image: url('../project/images/joist_redesign/8-redesign-min.png');
-			height: calc(~'@{width} * 2.142');
+			height: calc(~'@{width} * 2.2431');
+		}
+		&.final_ios{
+			@width:320px;
+			width: @width;
+			background-image: url('../project/images/joist_redesign/9-poster.png');
+			height: calc(~'@{width} * 1.78125');
 		}
 	}//.image
 	@media(min-width: 767px) and (max-width: 1100px){
@@ -485,32 +500,22 @@
 				height: calc(~'@{width} * .5958');
 			}
 			&.cell_components{
-				height: calc(~'@{width} * .6025');
+				height: calc(~'@{width} * .7333');
 			}
 			&.redesign{
-				height: calc(~'@{width} * 2.142');
+				height: calc(~'@{width} * 2.2431');
 			}
 		}//.image
 	}//@media(max-width: 1100px)
 	@media(max-width: 767px){
-		#qb_sync_intro.active{ 
+		#redesign_reasons.active{ 
 			.sub_sections{   
 				height: calc(~'(1rem + 4vw) * 3');
 			}
 		}
-		#qb_sync_settings.active{ 
+		#redesign_principles.active{ 
 			.sub_sections{   
-				height: calc(~'(1rem + 4vw) * 2');
-			}
-		}
-		#qb_sync_final.active{ 
-			.sub_sections{   
-				height: calc(~'(1rem + 4vw) * 3');
-			}
-		}
-		#qb_sync_learnings.active{ 
-			.sub_sections{   
-				height: calc(~'(1rem + 4vw) * 2');
+				height: calc(~'(1rem + 4vw)* 3');
 			}
 		}
 		.image{
@@ -532,16 +537,19 @@
 				height: calc(~'(100vw - 40px) * .5958');
 			}
 			&.cell_components{
-				height: calc(~'(100vw - 40px) * .6025');
+				height: calc(~'(100vw - 40px) * .7333');
 			}
 			&.redesign{
-				height: calc(~'(100vw - 40px) * 2.142');
+				height: calc(~'(100vw - 40px) * 2.2431');
 			}
 		}//.image
 	}//@media(max-width: 767px)
 }//#joist_redesign
 
 #joist_quickbooks_sync{
+	.app_store_links{
+		text-decoration: underline
+	}
 	#qb_sync_intro.active{ 
 		.sub_sections{   
 			height: calc(~'(.3rem + 1.1vw) * 3');

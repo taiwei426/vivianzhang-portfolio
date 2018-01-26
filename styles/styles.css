@@ -167,10 +167,10 @@
   padding: 50px 0;
 }
 #homepage_wrapper section#recent_projects .redesign {
-  height: calc(42vw * .5842);
+  height: calc(42vw * .5841);
 }
 #homepage_wrapper section#recent_projects .sync {
-  height: calc(42vw * .5809);
+  height: calc(42vw * .5808);
 }
 #homepage_wrapper section#recent_projects .email {
   height: calc(42vw * .679);
@@ -310,6 +310,9 @@
   font-size: 19px;
 }
 @media (min-width: 767px) and (max-width: 1100px) {
+  #homepage_wrapper section#recent_projects .redesign {
+    height: calc(52vw * .5842);
+  }
   #homepage_wrapper section#recent_projects .sync {
     height: calc(52vw * .57);
   }
@@ -347,7 +350,7 @@
     padding: 3.5vw 3vw 3.2vw;
   }
   #homepage_wrapper .left_panel .page_navigation .section.active#projects .sub_sections {
-    height: calc((1rem + 4vw) * 3 + 5px);
+    height: calc((1rem + 4vw) * 5 + 5px);
   }
   #homepage_wrapper .left_panel .page_navigation .section.active#other .sub_sections {
     height: calc((1rem + 4vw) * 3 + 5px);
@@ -362,6 +365,9 @@
   }
   #homepage_wrapper section#hello .main_panel .vert_aligner h1 {
     font-size: 3rem;
+  }
+  #homepage_wrapper section#recent_projects .redesign {
+    height: calc((100vw - 40px) * .5842);
   }
   #homepage_wrapper section#recent_projects .sync {
     height: calc((100vw - 40px) * .583);
@@ -421,6 +427,9 @@
 #joist_redesign #redesign_principles.active .sub_sections {
   height: calc((.3rem + 1.1vw) * 3);
 }
+#joist_redesign .app_store_links {
+  text-decoration: underline;
+}
 #joist_redesign .image {
   width: 42vw;
   box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
@@ -451,11 +460,16 @@
 }
 #joist_redesign .image.cell_components {
   background-image: url('../project/images/joist_redesign/7-cell-components-min.png');
-  height: calc(42vw * .6025);
+  height: calc(42vw * .7333);
 }
 #joist_redesign .image.redesign {
   background-image: url('../project/images/joist_redesign/8-redesign-min.png');
-  height: calc(42vw * 2.142);
+  height: calc(42vw * 2.2431);
+}
+#joist_redesign .image.final_ios {
+  width: 320px;
+  background-image: url('../project/images/joist_redesign/9-poster.png');
+  height: calc(320px * 1.78125);
 }
 @media (min-width: 767px) and (max-width: 1100px) {
   #joist_redesign .image {
@@ -477,24 +491,18 @@
     height: calc(52vw * .5958);
   }
   #joist_redesign .image.cell_components {
-    height: calc(52vw * .6025);
+    height: calc(52vw * .7333);
   }
   #joist_redesign .image.redesign {
-    height: calc(52vw * 2.142);
+    height: calc(52vw * 2.2431);
   }
 }
 @media (max-width: 767px) {
-  #joist_redesign #qb_sync_intro.active .sub_sections {
+  #joist_redesign #redesign_reasons.active .sub_sections {
     height: calc((1rem + 4vw) * 3);
   }
-  #joist_redesign #qb_sync_settings.active .sub_sections {
-    height: calc((1rem + 4vw) * 2);
-  }
-  #joist_redesign #qb_sync_final.active .sub_sections {
-    height: calc((1rem + 4vw) * 3);
-  }
-  #joist_redesign #qb_sync_learnings.active .sub_sections {
-    height: calc((1rem + 4vw) * 2);
+  #joist_redesign #redesign_principles.active .sub_sections {
+    height: calc((1rem + 4vw)* 3);
   }
   #joist_redesign .image {
     width: 100%;
@@ -515,11 +523,14 @@
     height: calc((100vw - 40px) * .5958);
   }
   #joist_redesign .image.cell_components {
-    height: calc((100vw - 40px) * .6025);
+    height: calc((100vw - 40px) * .7333);
   }
   #joist_redesign .image.redesign {
-    height: calc((100vw - 40px) * 2.142);
+    height: calc((100vw - 40px) * 2.2431);
   }
+}
+#joist_quickbooks_sync .app_store_links {
+  text-decoration: underline;
 }
 #joist_quickbooks_sync #qb_sync_intro.active .sub_sections {
   height: calc((.3rem + 1.1vw) * 3);
