@@ -290,6 +290,9 @@
 					&.github:before{
 						content: '\f09b';
 					}//&.linkedin.before
+					&.medium:before{
+						content: '\f23a';
+					}
 					&.codepen:before{
 						content: '\f1cb';
 					}
@@ -505,6 +508,11 @@
 			&.redesign{
 				height: calc(~'@{width} * 2.2431');
 			}
+			/*&.final_ios{
+				@width:320px;
+				width: @width;
+				height: calc(~'@{width} * 1.78125');
+			}*/
 		}//.image
 	}//@media(max-width: 1100px)
 	@media(max-width: 767px){
@@ -541,6 +549,10 @@
 			}
 			&.redesign{
 				height: calc(~'(100vw - 40px) * 2.2431');
+			}
+			&.final_ios{
+				width: calc(~'(100vw - 40px)');
+				height: calc(~'(100vw - 40px) * 1.78125');
 			}
 		}//.image
 	}//@media(max-width: 767px)

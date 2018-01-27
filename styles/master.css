@@ -1590,6 +1590,9 @@ svg {
 #homepage_wrapper section#about_me .connect_icons_wrapper a.github:before {
   content: '\f09b';
 }
+#homepage_wrapper section#about_me .connect_icons_wrapper a.medium:before {
+  content: '\f23a';
+}
 #homepage_wrapper section#about_me .connect_icons_wrapper a.codepen:before {
   content: '\f1cb';
 }
@@ -1765,6 +1768,11 @@ svg {
 @media (min-width: 767px) and (max-width: 1100px) {
   #joist_redesign .image {
     width: 52vw;
+    /*&.final_ios{
+				@width:320px;
+				width: @width;
+				height: calc(~'@{width} * 1.78125');
+			}*/
   }
   #joist_redesign .image.header_image {
     height: calc(52vw * .575);
@@ -1818,6 +1826,10 @@ svg {
   }
   #joist_redesign .image.redesign {
     height: calc((100vw - 40px) * 2.2431);
+  }
+  #joist_redesign .image.final_ios {
+    width: calc((100vw - 40px));
+    height: calc((100vw - 40px) * 1.78125);
   }
 }
 #joist_quickbooks_sync .app_store_links {
