@@ -433,6 +433,10 @@
 #joist_redesign .app_store_links {
   text-decoration: underline;
 }
+#joist_redesign .image_container {
+  display: inline-block;
+  vertical-align: top;
+}
 #joist_redesign .image {
   width: 42vw;
   box-shadow: 0 0 20px 0 rgba(61, 53, 96, 0.08);
@@ -443,6 +447,10 @@
 }
 #joist_redesign .image.header_image {
   background-image: url('../project/images/joist_redesign/1-banner-min.png');
+  height: calc(42vw * .5841);
+}
+#joist_redesign .image.current_app {
+  background-image: url('../project/images/joist_redesign/1-current-joist-min.png');
   height: calc(42vw * .575);
 }
 #joist_redesign .image.inconsistency {
@@ -474,6 +482,33 @@
   background-image: url('../project/images/joist_redesign/9-poster.png');
   height: calc(320px * 1.78125);
 }
+#joist_redesign .image.adding_client_orig {
+  width: 320px;
+  background-image: url('../project/images/joist_redesign/adding_client_orig.gif');
+  height: calc(320px * 1.78125);
+}
+#joist_redesign .image.adding_client {
+  width: 320px;
+  background-image: url('../project/images/joist_redesign/adding_client.gif');
+  height: calc(320px * 1.78125);
+  /*margin-left: 20px;*/
+}
+#joist_redesign .image.bottom_buttons_orig {
+  width: calc((41vw/2) - 10px);
+  background-image: url('../project/images/joist_redesign/bottom_buttons_orig-min.png');
+  height: calc(calc((41vw/2) - 10px) * 1.78125);
+}
+#joist_redesign .image.bottom_buttons {
+  width: calc((41vw/2) - 10px);
+  background-image: url('../project/images/joist_redesign/bottom_buttons.gif');
+  height: calc(calc((41vw/2) - 10px) * 1.78125);
+  margin-left: 20px;
+}
+#joist_redesign .image.progressive_fields {
+  width: 320px;
+  background-image: url('../project/images/joist_redesign/progressive_fields.gif');
+  height: calc(320px * 1.78125);
+}
 @media (min-width: 767px) and (max-width: 1100px) {
   #joist_redesign .image {
     width: 52vw;
@@ -484,6 +519,9 @@
 			}*/
   }
   #joist_redesign .image.header_image {
+    height: calc(52vw * .5841);
+  }
+  #joist_redesign .image.current_app {
     height: calc(52vw * .575);
   }
   #joist_redesign .image.inconsistency {
@@ -512,10 +550,28 @@
   #joist_redesign #redesign_principles.active .sub_sections {
     height: calc((1rem + 4vw)* 3);
   }
+  #joist_redesign .image_container {
+    width: calc((100vw/2) - 32px);
+  }
   #joist_redesign .image {
     width: 100%;
+    /*&.adding_client_orig{
+				width: @width2x;
+				height: calc(~'@{width2x} * 1.78125');
+			}
+			&.adding_client{
+				width: @width2x;
+				height: calc(~'@{width2x} * 1.78125');
+				margin-left: 20px;
+				& ~ .caption{
+					padding-left: 25px;
+				}
+			}*/
   }
   #joist_redesign .image.header_image {
+    height: calc((100vw - 40px) * .5841);
+  }
+  #joist_redesign .image.current_app {
     height: calc((100vw - 40px) * .575);
   }
   #joist_redesign .image.inconsistency {
@@ -537,6 +593,31 @@
     height: calc((100vw - 40px) * 2.2431);
   }
   #joist_redesign .image.final_ios {
+    width: calc((100vw - 40px));
+    height: calc((100vw - 40px) * 1.78125);
+  }
+  #joist_redesign .image.adding_client_orig {
+    width: calc((100vw - 40px));
+    height: calc((100vw - 40px) * 1.78125);
+  }
+  #joist_redesign .image.adding_client {
+    width: calc((100vw - 40px));
+    height: calc((100vw - 40px) * 1.78125);
+    margin-left: 0px;
+  }
+  #joist_redesign .image.bottom_buttons_orig {
+    width: calc((100vw/2) - 32px);
+    height: calc(calc((100vw/2) - 32px) * 1.78125);
+  }
+  #joist_redesign .image.bottom_buttons {
+    width: calc((100vw/2) - 32px);
+    height: calc(calc((100vw/2) - 32px) * 1.78125);
+    margin-left: 20px;
+  }
+  #joist_redesign .image.bottom_buttons ~ .caption {
+    padding-left: 25px;
+  }
+  #joist_redesign .image.progresive_fields {
     width: calc((100vw - 40px));
     height: calc((100vw - 40px) * 1.78125);
   }

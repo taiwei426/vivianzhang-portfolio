@@ -853,6 +853,9 @@ svg {
   .body_wrapper .main_panel .caption {
     font-size: .8rem;
   }
+  .body_wrapper .main_panel .image_wrapper {
+    padding-bottom: 7vw;
+  }
   .body_wrapper .main_panel #mobile_bottom_nav {
     display: -webkit-box;
     display: -moz-box;

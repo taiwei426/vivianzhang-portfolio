@@ -30,7 +30,7 @@
 		padding: 30px 0 80px 0;
 	}//h2
   	h3{
-    	.pf_b;
+    	.pf_b; 
     	color: @darkviolet;
     	font-size: calc(~'1.1rem + 1vw');
     	padding-top: 25px;
@@ -444,14 +444,22 @@
 	.app_store_links{
 		text-decoration: underline
 	}
+	.image_container{
+		display: inline-block;
+		vertical-align: top;
+	}
 	@width: 42vw;
 	.image{
 		width: @width;
 		.boxshadow(0 0 20px 0 rgba(61,53,96, 0.08));
 		&.header_image{
 			background-image: url('../project/images/joist_redesign/1-banner-min.png');
-			height: calc(~'@{width} * .575');
+			height: calc(~'@{width} * .5841');
 		}//&.header_image
+		&.current_app{
+			background-image: url('../project/images/joist_redesign/1-current-joist-min.png');
+			height: calc(~'@{width} * .575');
+		}//&.current_app
 		&.inconsistency{
 			background-image: url('../project/images/joist_redesign/2-inconsistency-min.png');
 			height: calc(~'@{width} * 2.24');
@@ -482,14 +490,49 @@
 			background-image: url('../project/images/joist_redesign/9-poster.png');
 			height: calc(~'@{width} * 1.78125');
 		}
+		
+		@width2x:calc(~'(41vw/2) - 10px');
+		&.adding_client_orig{
+			@width:320px;
+			width: @width;
+			background-image: url('../project/images/joist_redesign/adding_client_orig.gif');
+			height: calc(~'@{width} * 1.78125');
+		}
+		&.adding_client{
+			@width:320px;
+			width: @width;
+			background-image: url('../project/images/joist_redesign/adding_client.gif');
+			height: calc(~'@{width} * 1.78125');
+			/*margin-left: 20px;*/
+		}
+		&.bottom_buttons_orig{
+			width: @width2x;
+			background-image: url('../project/images/joist_redesign/bottom_buttons_orig-min.png');
+			height: calc(~'@{width2x} * 1.78125');
+		}
+		&.bottom_buttons{
+			width: @width2x;
+			background-image: url('../project/images/joist_redesign/bottom_buttons.gif');
+			height: calc(~'@{width2x} * 1.78125');
+			margin-left: 20px;
+		}
+		&.progressive_fields{
+			@width:320px;
+			width: @width;
+			background-image: url('../project/images/joist_redesign/progressive_fields.gif');
+			height: calc(~'@{width} * 1.78125');
+		}
 	}//.image
 	@media(min-width: 767px) and (max-width: 1100px){
 		@width: 52vw;
 		.image{
 			width: @width;
 			&.header_image{
-				height: calc(~'@{width} * .575');
+				height: calc(~'@{width} * .5841');
 			}//&.header_image
+			&.current_app{
+				height: calc(~'@{width} * .575');
+			}//&.current_app
 			&.inconsistency{
 				height: calc(~'@{width} * 2.24');
 			}
@@ -526,12 +569,19 @@
 				height: calc(~'(1rem + 4vw)* 3');
 			}
 		}
+		.image_container{
+			@width2x:calc(~'(100vw/2) - 32px');
+			width: @width2x;
+		}
 		.image{
 			@width: 100%;
 			width: @width;
 			&.header_image{
-				height: calc(~'(100vw - 40px) * .575');
+				height: calc(~'(100vw - 40px) * .5841');
 			}//&.header_image
+			&.current_app{
+				height: calc(~'(100vw - 40px) * .575');
+			}//&.current_app
 			&.inconsistency{
 				height: calc(~'(100vw - 40px) * 2.24');
 			}
@@ -551,6 +601,44 @@
 				height: calc(~'(100vw - 40px) * 2.2431');
 			}
 			&.final_ios{
+				width: calc(~'(100vw - 40px)');
+				height: calc(~'(100vw - 40px) * 1.78125');
+			}
+			&.adding_client_orig{
+				width: calc(~'(100vw - 40px)');
+				height: calc(~'(100vw - 40px) * 1.78125');
+			}
+			&.adding_client{
+				width: calc(~'(100vw - 40px)');
+				height: calc(~'(100vw - 40px) * 1.78125');
+				margin-left: 0px;
+			}
+			@width2x:calc(~'(100vw/2) - 32px');
+			/*&.adding_client_orig{
+				width: @width2x;
+				height: calc(~'@{width2x} * 1.78125');
+			}
+			&.adding_client{
+				width: @width2x;
+				height: calc(~'@{width2x} * 1.78125');
+				margin-left: 20px;
+				& ~ .caption{
+					padding-left: 25px;
+				}
+			}*/
+			&.bottom_buttons_orig{
+				width: @width2x;
+				height: calc(~'@{width2x} * 1.78125');
+			}
+			&.bottom_buttons{
+				width: @width2x;
+				height: calc(~'@{width2x} * 1.78125');
+				margin-left: 20px;
+				& ~ .caption{
+					padding-left: 25px;
+				}
+			}
+			&.progresive_fields{
 				width: calc(~'(100vw - 40px)');
 				height: calc(~'(100vw - 40px) * 1.78125');
 			}

@@ -37,8 +37,8 @@
 				<div class="navigation_wrapper">
 					<ul class="pagination_wrapper">
 						<li id="all_projects"><a href="../index.html#recent_projects" >All Projects</a></li>
-						<li id="previous_project"><a href="../project/joist-quickbooks-sync.html">Previous</a></li>
-						<li id="next_project"><a href="../project/interactive-social-emails.html">Next</a></li>
+						<li id="previous_project"><a href="../project/influencer-relationship-manager.html">Previous</a></li>
+						<li id="next_project"><a href="../project/joist-quickbooks-sync.html">Next</a></li>
 					</ul>
 					<ul class="page_navigation">
 						<li class="section mobile_close">
@@ -73,10 +73,13 @@
 			<div id="main_panel" class="main_panel">
 				<section>
 					<h2 class="section_title">Joist Redesign</h2>
-					<p>Joist helps trade contractors (ie: anyone who works on your home, like roofers, landscapers) with <b>estimating, invoicing, and requesting payments</b>. We’re one of trade contractors' most cherished apps, with over 10,000 reviews on the <a href="https://itunes.apple.com/us/app/joist-app-for-contractors/id592163563?mt=8" target="_blank" class="app_store_links">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.joistapp.android.joist&hl=en" target="_blank"  class="app_store_links"> Android</a> app stores.</p>
 					<div class="image_wrapper">
 						<div class="image header_image"></div>
-						<div class="caption">Our app allows contractors to quickly make estimates and invoices</div>
+					</div>
+					<p>Joist helps trade contractors (ie: anyone who works on your home, like roofers, landscapers) with <b>estimating, invoicing, and requesting payments</b>. We’re one of trade contractors' most cherished apps, with over 10,000 reviews on the <a href="https://itunes.apple.com/us/app/joist-app-for-contractors/id592163563?mt=8" target="_blank" class="app_store_links">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.joistapp.android.joist&hl=en" target="_blank"  class="app_store_links"> Android</a> app stores.</p>
+					<div class="image_wrapper">
+						<div class="image current_app"></div>
+						<div class="caption">Our 3 main screens, allowing contractors to quickly create estimates and invoices.</div>
 					</div>
 					<p>We know that running a small trade business is hard - in addition to the actual roofing or landscaping work, our contractors have to source jobs, manage teams, and handle finances, just to name a few. Joist’s mission has always been to “make contractors heros,” where we take care of the paperwork so that our contractors can do what they love.</p>
 				</section>
@@ -115,17 +118,17 @@
 					<p>I started the redesign with a quick audit of our app. When over ~75% of the app is composed of the same cell or a variant of it, it was pretty easy to decide what to focus my energy on.</p>
 					<div class="image_wrapper">
 						<div class="image pervasive_cell"></div>
-						<div class="caption">The cell’s pervasiveness</div>
+						<div class="caption">Current app: 75% of app is composed of this cell or a variant of it.</div>
 					</div>
-					<p>I spent a considerable amount of time perfecting this cell since all others are derived from it. It needed to be consistent across and yet flexible for all of its use cases. When a page has a list of these cells, it needed to afford easy scanning and not be overwhelming.</p>
+					<p>I spent a considerable amount of time perfecting this cell since all others are derived from it. It needed to be consistent across and yet flexible for all of its use cases. When a page has a list of these cells, it needed to afford easy scanning and not be overwhelming. It also needed to feel light and effortless since most screens are composed of mainly this cell being repeated.</p>
 					<div class="image_wrapper">
 						<div class="image redesigned_cell"></div>
-						<div class="caption">The apple of my eye</div>
+						<div class="caption">Perfecting this cell was super important.</div>
 					</div>
 					<p>As I iterated on this cell, I experimented with different font sizes, colors and spacing. I created my own style sheet to keep all designs consistent.</p>
 					<div class="image_wrapper">
 						<div class="image style_guide"></div>
-						<div class="caption">I studied AirBnb’s redesign diligently, including their stylesheet.</div>
+						<div class="caption">I studied AirBnb’s redesign diligently.</div>
 					</div>
 					<div class="image_wrapper">
 						<div class="image cell_components"></div>
@@ -145,13 +148,60 @@
 						</div>
 						<div class="caption">A rough prototype</div>
 					</div>
-					<p>This is just a prototype and by no means the final design. I’m hoping that this prototype, juxtaposed to our current app, will raise awareness for the design debt that we have. A prototype is much more concrete and hopefully more effective of a springboard to initiate conversations about the type of experience we ultimately want to create for our contractors.</p>
+					<p>In addition to the visuals, there were some other parts of the app that I redesigned. </p>
+					<p>For example, right now adding clients in our current app takes quite a few steps: </p>
+					<div class="image_wrapper">
+						<div class="image adding_client_orig"></div>
+						<div class="caption">Current: lots of steps</div>
+					</div>
+					<!-- <div class="image_wrapper">
+						<div class="image_container">
+							<div class="image adding_client_orig"></div>
+							<div class="caption">Current: lots of steps</div>
+						</div>
+						<div class="image_container">
+							<div class="image adding_client"></div>
+							<div class="caption">Redesigned: seamless interaction</div>
+						</div>
+					</div> -->
+					<p>Instead, I consolidated all the steps into one seamless interaction:</p>
+					<div class="image_wrapper">
+						<div class="image adding_client"></div>
+						<div class="caption">Redesigned: seamless interaction</div>
+					</div>
+					<p>In the PDF view, I’ve moved the main buttons from the top to the bottom, where people’s fingers are. The main actions are still shown, with the remaining actions under More. When tapping more, the actions are also located at the bottom, again where people’s fingers are.</p>
+					<div class="image_wrapper">
+						<div class="image_container">
+							<div class="image bottom_buttons_orig"></div>
+							<div class="caption">Current: buttons up top</div>
+						</div>
+						<div class="image_container">
+							<div class="image bottom_buttons"></div>
+							<div class="caption">Redesigned: buttons located where fingers are</div>
+						</div>
+					</div>
+					<p>I reduced the complexity of the forms to only show the most relevant input fields. Once information has been entered, the remainder of the input fields are shown.</p>
+					<div class="image_wrapper">
+						<div class="image progressive_fields"></div>
+						<div class="caption">Progressive Inputs</div>
+					</div>
+					
+					<!-- <div class="image_wrapper">
+						<div class="image final_ios">
+							<video id="adding_client" class="" width="100%" poster="images/joist_redesign/9-poster.png" controls="true" loop>
+								<source src="images/joist_redesign/adding_client.mov" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="caption">A rough prototype</div>
+					</div> -->
+					<p>This is just a prototype and by no means the final design (there'd have to be quite a bit of usability testing before anything's finalized). I’m hoping that this prototype, juxtaposed to our current app, will raise awareness for the design debt that we have. A prototype is much more concrete and hopefully more effective of a springboard to initiate conversations about the type of experience we ultimately want to create for our contractors.</p>
 					<p>I don’t expect for a redesign to happen this quarter, but as long as there’s awareness, shared language, and healthy conversations about how we’ll create an experience that’ll “make contractors heros,” over time I believe that momentum will build and we'll be ready to create a better experience for our contractors when that time comes. </p>
 				</section>				
 				<div id="mobile_bottom_nav">
-					<a id="previous_project" href="../project/joist-quickbooks-sync.html">Previous</a>
+					<a id="previous_project" href="../project/influencer-relationship-manager.html">Previous</a>
 					<a id="all_projects" href="../index.html#recent_projects" >All Projects</a>
-					<a id="next_project" href="../project/interactive-social-emails.html" >Next</a>
+					<a id="next_project" href="../project/joist-quickbooks-sync.html" >Next</a>
 				</div>
 				
 			</div>
@@ -168,7 +218,7 @@
 		<script type='text/javascript'>
 			$(function(){
 			    function setPlayPause() {
-			        playPause('#final_ios');
+			        playPause('#final_ios')
 			    }
 			    function playPause(video_id) {
 			        $(video_id).isOnScreen() == true ? $(video_id)[0].play() : $(video_id)[0].pause()
